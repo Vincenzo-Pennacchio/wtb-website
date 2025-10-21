@@ -140,6 +140,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create particles periodically
     setInterval(createParticle, 800);
 
+    // Banner parallax effect
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const bannerImage = document.querySelector('.banner-image');
+        if (bannerImage) {
+            const speed = 0.3;
+            bannerImage.style.transform = `translateY(${scrolled * speed}px) scale(1.1)`;
+        }
+    });
+
     // Wallet connection simulation
     const connectButton = document.querySelector('.btn-connect');
     if (connectButton) {

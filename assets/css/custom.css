@@ -104,8 +104,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background: rgba(10, 10, 10, 0.9);
+  z-index: 2000; /* Increased z-index to stay above full screen banner */
+  background: rgba(10, 10, 10, 0.95); /* Slightly more opaque for better visibility */
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-glow);
   padding: 1rem 0;
@@ -185,12 +185,173 @@ body {
   padding: 0 2rem;
 }
 
+/* Banner Section */
+.banner-section {
+  position: relative;
+  height: 100vh; /* Full viewport height - maximum possible */
+  min-height: 100vh; /* Ensure it's always full screen */
+  overflow: hidden;
+  margin-top: 0; /* Remove top margin to use full screen */
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1.2);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(106, 13, 173, 0.8) 0%,
+    rgba(57, 255, 20, 0.6) 50%,
+    rgba(255, 215, 0, 0.7) 100%
+  );
+  z-index: 2;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.banner-text {
+  text-align: center; /* Center align the text */
+  max-width: 1200px; /* Increased width for maximum banner */
+}
+
+.banner-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 8rem; /* Maximum font size for ultimate impact */
+  font-weight: 900;
+  color: var(--text-light);
+  margin-bottom: 4rem; /* Even more spacing for full screen */
+  text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.9);
+  line-height: 1.0;
+}
+
+.banner-highlight {
+  background: linear-gradient(45deg, var(--gold), var(--neon-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: bannerGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes bannerGlow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(57, 255, 20, 0.9));
+  }
+}
+
+.banner-subtitle {
+  font-size: 3rem; /* Maximum subtitle size for full screen banner */
+  color: var(--text-light);
+  opacity: 0.9;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+
+
+/* Banner animations */
+.banner-section {
+  animation: bannerSlideDown 1s ease-out;
+}
+
+@keyframes bannerSlideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Banner responsive design */
+@media (max-width: 768px) {
+  .banner-section {
+    height: 100vh; /* Full height even on mobile */
+    min-height: 100vh; /* Always full screen */
+    margin-top: 0;
+  }
+  
+  .banner-content {
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .banner-title {
+    font-size: 4rem; /* Large mobile title for full screen */
+  }
+  
+  .banner-subtitle {
+    font-size: 2rem; /* Large mobile subtitle */
+    margin-bottom: 0;
+  }
+  
+  .banner-text {
+    max-width: 95%; /* Maximum mobile width */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section {
+    height: 100vh; /* Full height on small mobile too */
+    min-height: 100vh;
+  }
+  
+  .banner-title {
+    font-size: 3rem; /* Still large on small mobile */
+  }
+  
+  .banner-subtitle {
+    font-size: 1.6rem; /* Proportional small mobile subtitle */
+  }
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 2rem; /* Reduced padding since banner is now full screen */
   position: relative;
 }
 
