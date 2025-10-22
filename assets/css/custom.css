@@ -257,7 +257,6 @@ body {
   font-weight: 900;
   color: var(--text-light);
   margin-bottom: 4rem; /* Even more spacing for full screen */
-  text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.9);
   line-height: 1.0;
 }
 
@@ -285,7 +284,6 @@ body {
   font-size: 3rem; /* Maximum subtitle size for full screen banner */
   color: var(--text-light);
   opacity: 0.9;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
   margin-bottom: 0;
   font-weight: 300;
   line-height: 1.3;
