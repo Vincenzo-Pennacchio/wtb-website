@@ -2,19 +2,19 @@
 /* Color Palette: Purple, Green, Gold */
 
 :root {
-  --primary-purple: #6a0dad;
-  --secondary-purple: #8e44ad;
-  --accent-purple: #9966cc;
-  --neon-green: #39ff14;
-  --emerald-green: #50c878;
-  --gold: #ffd700;
-  --dark-gold: #b8860b;
+  --primary-purple: #bf3ed6;
+  --secondary-purple: #fe5ab6;
+  --accent-purple: #bf3ed6;
+  --neon-green: #44c76a;
+  --emerald-green: #44c76a;
+  --gold: #fdf259;
+  --dark-gold: #fdf259;
   --bg-dark: #0a0a0a;
-  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #16213e 100%);
+  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, rgba(191, 62, 214, 0.2) 30%, rgba(254, 90, 182, 0.15) 70%, #0a0a0a 100%);
   --text-light: #ffffff;
   --text-secondary: #b0b0b0;
   --glass-bg: rgba(255, 255, 255, 0.1);
-  --border-glow: rgba(106, 13, 173, 0.3);
+  --border-glow: rgba(191, 62, 214, 0.3);
 }
 
 * {
@@ -56,35 +56,35 @@ body {
   top: 20%;
   left: 20%;
   animation-delay: 0s;
-  background: var(--gold);
+  background: #fdf259;
 }
 
 .particle:nth-child(2) {
   top: 60%;
   left: 80%;
   animation-delay: 2s;
-  background: var(--primary-purple);
+  background: #bf3ed6;
 }
 
 .particle:nth-child(3) {
   top: 80%;
   left: 40%;
   animation-delay: 4s;
-  background: var(--neon-green);
+  background: #44c76a;
 }
 
 .particle:nth-child(4) {
   top: 40%;
   left: 60%;
   animation-delay: 1s;
-  background: var(--gold);
+  background: #fe5ab6;
 }
 
 .particle:nth-child(5) {
   top: 10%;
   left: 90%;
   animation-delay: 3s;
-  background: var(--emerald-green);
+  background: #44c76a;
 }
 
 @keyframes float {
@@ -135,7 +135,7 @@ body {
 }
 
 .logo-text {
-  background: linear-gradient(45deg, var(--gold), var(--neon-green));
+  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -224,9 +224,10 @@ body {
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(106, 13, 173, 0.8) 0%,
-    rgba(57, 255, 20, 0.6) 50%,
-    rgba(255, 215, 0, 0.7) 100%
+    rgba(191, 62, 214, 0.8) 0%,
+    rgba(68, 199, 106, 0.6) 30%,
+    rgba(254, 90, 182, 0.7) 70%,
+    rgba(253, 242, 89, 0.6) 100%
   );
   z-index: 2;
 }
@@ -259,7 +260,7 @@ body {
 }
 
 .banner-highlight {
-  background: linear-gradient(45deg, var(--gold), var(--neon-green));
+  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -268,10 +269,13 @@ body {
 
 @keyframes bannerGlow {
   0% {
-    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
+    filter: drop-shadow(0 0 5px rgba(253, 242, 89, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(68, 199, 106, 0.8));
   }
   100% {
-    filter: drop-shadow(0 0 20px rgba(57, 255, 20, 0.9));
+    filter: drop-shadow(0 0 20px rgba(254, 90, 182, 0.9));
   }
 }
 
@@ -375,7 +379,8 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(45deg, var(--primary-purple), var(--neon-green), var(--gold));
+  background: linear-gradient(45deg, #bf3ed6, #44c76a, #fdf259, #fe5ab6);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -474,12 +479,12 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: linear-gradient(45deg, var(--primary-purple), var(--neon-green), var(--gold));
+  background: linear-gradient(45deg, #bf3ed6, #44c76a, #fdf259, #fe5ab6);
   display: flex;
   align-items: center;
   justify-content: center;
   animation: coinRotate 10s linear infinite;
-  box-shadow: 0 0 50px rgba(106, 13, 173, 0.5);
+  box-shadow: 0 0 50px rgba(191, 62, 214, 0.5);
   position: relative;
 }
 
@@ -491,7 +496,7 @@ body {
   right: -5px;
   bottom: -5px;
   border-radius: 50%;
-  background: linear-gradient(45deg, var(--gold), var(--neon-green), var(--primary-purple));
+  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6, #bf3ed6);
   z-index: -1;
   animation: coinRotate 8s linear infinite reverse;
 }
@@ -526,7 +531,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  background: linear-gradient(45deg, var(--gold), var(--neon-green));
+  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -594,14 +599,14 @@ body {
   height: 300px;
   border-radius: 50%;
   background: conic-gradient(
-    var(--neon-green) 0% 40%,
-    var(--primary-purple) 40% 70%,
-    var(--gold) 70% 90%,
-    var(--emerald-green) 90% 100%
+    #44c76a 0% 40%,
+    #bf3ed6 40% 70%,
+    #fdf259 70% 90%,
+    #fe5ab6 90% 100%
   );
   margin: 0 auto;
   position: relative;
-  box-shadow: 0 0 30px rgba(106, 13, 173, 0.5);
+  box-shadow: 0 0 30px rgba(191, 62, 214, 0.5);
 }
 
 .chart-placeholder::after {
@@ -638,10 +643,10 @@ body {
   border-radius: 50%;
 }
 
-.color-1 { background: var(--neon-green); }
-.color-2 { background: var(--primary-purple); }
-.color-3 { background: var(--gold); }
-.color-4 { background: var(--emerald-green); }
+.color-1 { background: #44c76a; }
+.color-2 { background: #bf3ed6; }
+.color-3 { background: #fdf259; }
+.color-4 { background: #fe5ab6; }
 
 /* Roadmap Section */
 .roadmap-section {
@@ -662,7 +667,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--neon-green), var(--gold));
+  background: linear-gradient(to bottom, #44c76a, #fdf259, #fe5ab6, #bf3ed6);
   transform: translateX(-50%);
 }
 
@@ -688,9 +693,9 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--gold);
+  background: #fdf259;
   border: 3px solid var(--bg-dark);
-  box-shadow: 0 0 15px var(--gold);
+  box-shadow: 0 0 15px #fdf259;
 }
 
 .timeline-item:nth-child(even) .timeline-marker {
@@ -702,22 +707,22 @@ body {
 }
 
 .timeline-item.completed .timeline-marker {
-  background: var(--neon-green);
-  box-shadow: 0 0 15px var(--neon-green);
+  background: #44c76a;
+  box-shadow: 0 0 15px #44c76a;
 }
 
 .timeline-item.active .timeline-marker {
-  background: var(--primary-purple);
-  box-shadow: 0 0 15px var(--primary-purple);
+  background: #bf3ed6;
+  box-shadow: 0 0 15px #bf3ed6;
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0%, 100% {
-    box-shadow: 0 0 15px var(--primary-purple);
+    box-shadow: 0 0 15px #bf3ed6;
   }
   50% {
-    box-shadow: 0 0 25px var(--primary-purple);
+    box-shadow: 0 0 25px #bf3ed6;
   }
 }
 
@@ -730,7 +735,7 @@ body {
 
 .timeline-content h3 {
   font-family: 'Orbitron', monospace;
-  color: var(--gold);
+  color: #fdf259;
   margin-bottom: 0.5rem;
 }
 
