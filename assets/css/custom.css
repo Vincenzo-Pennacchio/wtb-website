@@ -211,7 +211,8 @@ html, body {
   height: 100vh; /* Full viewport height */
   min-height: 100vh;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 6rem; /* Fixed space above first banner */
+  margin-bottom: 0; /* No space between banners */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,7 +295,8 @@ html, body {
   height: 1800px; /* Fixed height of 1800px */
   min-height: 1800px; /* Ensure minimum height is 1800px */
   overflow: hidden;
-  margin-top: 2rem; /* Add some spacing from first banner */
+  margin-top: 0; /* No space between banners */
+  margin-bottom: 6rem; /* Fixed space below second banner */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,6 +408,7 @@ html, body {
   .first-banner-section {
     height: 80vh; /* Reduced height on tablet */
     min-height: 80vh;
+    margin-top: 5rem; /* Reduced fixed space above on tablet */
   }
   
   .first-banner-content {
@@ -432,6 +435,7 @@ html, body {
     height: 1200px; /* Increased height on tablet */
     min-height: 1200px; /* Maintain significant height */
     margin-top: 0;
+    margin-bottom: 5rem; /* Reduced fixed space below on tablet */
   }
 }
 
@@ -439,6 +443,7 @@ html, body {
   .first-banner-section {
     height: 70vh; /* Optimized height on mobile */
     min-height: 70vh;
+    margin-top: 4rem; /* Reduced fixed space above on mobile */
   }
   
   .first-banner-content {
@@ -456,6 +461,7 @@ html, body {
   .banner-section {
     height: 1000px; /* Increased height on mobile */
     min-height: 1000px;
+    margin-bottom: 4rem; /* Reduced fixed space below on mobile */
   }
 }
 
@@ -1094,6 +1100,7 @@ html, body {
     height: 80vh;
     min-height: 80vh;
     padding: 0 1rem;
+    margin-top: 5rem;
   }
   
   .first-banner-container {
@@ -1118,6 +1125,7 @@ html, body {
     height: 1400px;
     min-height: 1400px;
     padding: 0 1rem;
+    margin-bottom: 5rem;
   }
   
   .banner-container {
@@ -1218,6 +1226,7 @@ html, body {
     height: 70vh;
     min-height: 70vh;
     padding: 0 1rem;
+    margin-top: 4rem;
   }
   
   .first-banner-container {
@@ -1242,6 +1251,7 @@ html, body {
     height: 1200px;
     min-height: 1200px;
     padding: 0 1rem;
+    margin-bottom: 4rem;
   }
   
   .banner-container {
@@ -1410,6 +1420,7 @@ html, body {
     height: 60vh;
     min-height: 60vh;
     padding: 0 0.8rem;
+    margin-top: 3rem;
   }
   
   .first-banner-container {
@@ -1435,6 +1446,7 @@ html, body {
     height: 1000px;
     min-height: 1000px;
     padding: 0 0.8rem;
+    margin-bottom: 3rem;
   }
   
   .banner-container {
@@ -1641,6 +1653,7 @@ html, body {
   
   .first-banner-section {
     padding: 0 0.5rem;
+    margin-top: 3rem;
   }
   
   .first-banner-container {
@@ -1662,6 +1675,7 @@ html, body {
   
   .banner-section {
     padding: 0 0.5rem;
+    margin-bottom: 3rem;
   }
   
   .banner-container {
