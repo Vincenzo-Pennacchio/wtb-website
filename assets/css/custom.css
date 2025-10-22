@@ -188,8 +188,8 @@ body {
 /* Banner Section */
 .banner-section {
   position: relative;
-  height: 100vh; /* Full viewport height - maximum possible */
-  min-height: 100vh; /* Ensure it's always full screen */
+  height: 1800px; /* Fixed height of 1800px */
+  min-height: 1800px; /* Ensure minimum height is 1800px */
   overflow: hidden;
   margin-top: 0; /* Remove top margin to use full screen */
 }
@@ -213,7 +213,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   filter: brightness(0.7) contrast(1.2);
+  transform: scale(1.1);
 }
 
 .banner-overlay {
@@ -310,8 +312,8 @@ body {
 /* Banner responsive design */
 @media (max-width: 768px) {
   .banner-section {
-    height: 100vh; /* Full height even on mobile */
-    min-height: 100vh; /* Always full screen */
+    height: 1200px; /* Increased height on tablet */
+    min-height: 1200px; /* Maintain significant height */
     margin-top: 0;
   }
   
@@ -337,8 +339,8 @@ body {
 
 @media (max-width: 480px) {
   .banner-section {
-    height: 100vh; /* Full height on small mobile too */
-    min-height: 100vh;
+    height: 1000px; /* Increased height on mobile */
+    min-height: 1000px;
   }
   
   .banner-title {
