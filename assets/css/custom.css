@@ -29,6 +29,7 @@ body {
   color: var(--text-light);
   overflow-x: hidden;
   position: relative;
+  min-width: 320px; /* Minimum width to prevent breaking on very small screens */
 }
 
 /* Animated Background */
@@ -109,6 +110,7 @@ body {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-glow);
   padding: 1rem 0;
+  width: 100%; /* Ensure full width */
 }
 
 .nav-container {
@@ -183,6 +185,24 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* First Banner Section */
@@ -192,12 +212,20 @@ body {
   min-height: 100vh;
   overflow: hidden;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .first-banner-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 1400px; /* Maximum width container */
+  height: 90vh; /* Slightly smaller than full viewport */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .first-banner-background {
@@ -224,9 +252,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem 8rem 2rem;
+  padding: 0 2rem 6rem 2rem;
 }
 
 .first-banner-text {
@@ -268,13 +294,21 @@ body {
   height: 1800px; /* Fixed height of 1800px */
   min-height: 1800px; /* Ensure minimum height is 1800px */
   overflow: hidden;
-  margin-top: 0; /* Remove top margin to use full screen */
+  margin-top: 2rem; /* Add some spacing from first banner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .banner-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 1400px; /* Maximum width container */
+  height: 90%; /* 90% of section height */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .banner-background {
@@ -292,7 +326,6 @@ body {
   object-fit: cover;
   object-position: center center;
   filter: brightness(0.7) contrast(1.2);
-  transform: scale(1.1);
 }
 
 .banner-content {
@@ -901,28 +934,357 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+
+/* Extra Large screens (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .nav-container {
+    max-width: 1400px;
+  }
+  
+  .first-banner-title {
+    font-size: 9rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 3.5rem;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .crypto-coin {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .coin-inner {
+    width: 380px;
+    height: 380px;
+  }
+  
+  .coin-logo {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Large screens (1200px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  .first-banner-title {
+    font-size: 7rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 2.8rem;
+  }
+  
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+/* Medium Large screens (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 1.5rem;
+  }
+  
+  .nav-container {
+    max-width: 960px;
+    padding: 0 1.5rem;
+  }
+  
+  .first-banner-section {
+    padding: 0 1.5rem;
+  }
+  
+  .first-banner-container {
+    max-width: 1200px;
+  }
+  
+  .first-banner-title {
+    font-size: 6rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 2.5rem;
+  }
+  
+  .first-banner-content {
+    padding: 0 1.5rem 5rem 1.5rem;
+  }
+  
+  .banner-section {
+    height: 1600px;
+    min-height: 1600px;
+    padding: 0 1.5rem;
+  }
+  
+  .banner-container {
+    max-width: 1200px;
+  }
+  
+  .hero-container {
+    gap: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .crypto-coin {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .coin-inner {
+    width: 290px;
+    height: 290px;
+  }
+  
+  .coin-logo {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .chart-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .chart-placeholder::after {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Medium screens (768px to 991px) - Tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+  
+  .nav-container {
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-connect {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .first-banner-section {
+    height: 80vh;
+    min-height: 80vh;
+    padding: 0 1rem;
+  }
+  
+  .first-banner-container {
+    max-width: 100%;
+    height: 85vh;
+    border-radius: 15px;
+  }
+  
+  .first-banner-title {
+    font-size: 5rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 2.2rem;
+  }
+  
+  .first-banner-content {
+    padding: 0 1rem 4rem 1rem;
+  }
+  
+  .banner-section {
+    height: 1400px;
+    min-height: 1400px;
+    padding: 0 1rem;
+  }
+  
+  .banner-container {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+  
+  .crypto-coin {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .coin-inner {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .coin-logo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tokenomics-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .chart-placeholder {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .social-links {
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Small screens (576px to 767px) - Large Mobile */
+@media (max-width: 767px) and (min-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
   .nav-links {
     display: none;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.8rem;
+  }
+  
+  .btn-connect {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .first-banner-section {
+    height: 70vh;
+    min-height: 70vh;
+    padding: 0 1rem;
+  }
+  
+  .first-banner-container {
+    max-width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+  }
+  
+  .first-banner-title {
+    font-size: 4rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .first-banner-content {
+    padding: 0 1rem 3rem 1rem;
+  }
+  
+  .banner-section {
+    height: 1200px;
+    min-height: 1200px;
+    padding: 0 1rem;
+  }
+  
+  .banner-container {
+    max-width: 100%;
+    border-radius: 12px;
   }
   
   .hero-container {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    padding: 0 1rem;
   }
   
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .hero-actions {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.8rem 1.5rem;
   }
   
   .hero-stats {
     justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .stat-value {
+    font-size: 1.3rem;
   }
   
   .crypto-coin {
@@ -931,9 +1293,9 @@ body {
   }
   
   .coin-inner {
-    width: 220px;
-    height: 220px;
-    font-size: 2rem;
+    width: 230px;
+    height: 230px;
+    font-size: 1.8rem;
   }
   
   .coin-logo {
@@ -941,9 +1303,37 @@ body {
     height: 180px;
   }
   
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+  }
+  
   .tokenomics-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .chart-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .chart-placeholder::after {
+    width: 120px;
+    height: 120px;
   }
   
   .timeline-item,
@@ -969,10 +1359,358 @@ body {
   .social-links {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+  
+  .social-link {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
   }
   
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Extra Small screens (up to 575px) - Small Mobile */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  .nav-container {
+    padding: 0 0.8rem;
+  }
+  
+  .crypto-nav {
+    padding: 0.8rem 0;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.6rem;
+  }
+  
+  .btn-connect {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .first-banner-section {
+    height: 60vh;
+    min-height: 60vh;
+    padding: 0 0.8rem;
+  }
+  
+  .first-banner-container {
+    max-width: 100%;
+    height: 75vh;
+    border-radius: 10px;
+  }
+  
+  .first-banner-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .first-banner-content {
+    padding: 0 0.8rem 3rem 0.8rem;
+  }
+  
+  .banner-section {
+    height: 1000px;
+    min-height: 1000px;
+    padding: 0 0.8rem;
+  }
+  
+  .banner-container {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-section {
+    padding-top: 1rem;
+  }
+  
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0 0.8rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 250px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    min-width: 80px;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .crypto-coin {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .coin-inner {
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+  
+  .coin-logo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .about-section, .tokenomics-section, .roadmap-section, .contact-section {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .feature-card {
+    padding: 1.2rem;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+  
+  .tokenomics-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .chart-placeholder {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .chart-placeholder::after {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .token-detail {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 1.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+  
+  .timeline-item .timeline-marker,
+  .timeline-item:nth-child(even) .timeline-marker,
+  .timeline-item:nth-child(odd) .timeline-marker {
+    left: -10px;
+    right: auto;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .roadmap-timeline::before {
+    left: 0;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .social-link {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-brand {
+    font-size: 1.1rem;
+  }
+  
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra Small screens (up to 320px) - Very Small Mobile */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+  
+  .first-banner-section {
+    padding: 0 0.5rem;
+  }
+  
+  .first-banner-container {
+    border-radius: 8px;
+  }
+  
+  .first-banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .first-banner-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .first-banner-content {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
+  
+  .banner-section {
+    padding: 0 0.5rem;
+  }
+  
+  .banner-container {
+    border-radius: 8px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .crypto-coin {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .coin-inner {
+    width: 170px;
+    height: 170px;
+  }
+  
+  .coin-logo {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+  }
+  
+  .chart-placeholder {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .chart-placeholder::after {
+    width: 80px;
+    height: 80px;
   }
 }
