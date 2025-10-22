@@ -767,7 +767,13 @@ body {
 }
 
 .social-icon {
-  font-size: 1.5rem;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  filter: drop-shadow(0 0 8px currentColor);
 }
 
 /* Footer */
