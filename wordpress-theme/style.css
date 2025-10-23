@@ -1,0 +1,314 @@
+/*
+Theme Name: WealthBag
+Theme URI: https://wealthbag.com
+Description: WealthBag - Futuristic Cryptocurrency Website Theme. A modern, responsive WordPress theme designed for cryptocurrency projects, featuring advanced animations, professional design, and optimized performance.
+Author: WealthBag Team
+Author URI: https://wealthbag.com
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wealthbag
+Domain Path: /languages
+Tags: cryptocurrency, blockchain, modern, dark, responsive, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* WealthBag - Futuristic Cryptocurrency Website */
+/* Color Palette: Purple, Green, Gold */
+
+:root {
+  --primary-purple: #bf3ed6;
+  --secondary-purple: #fe5ab6;
+  --accent-purple: #bf3ed6;
+  --neon-green: #44c76a;
+  --emerald-green: #44c76a;
+  --gold: #fdf259;
+  --dark-gold: #fdf259;
+  --bg-dark: #0a0a0a;
+  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, rgba(191, 62, 214, 0.2) 30%, rgba(254, 90, 182, 0.15) 70%, #0a0a0a 100%);
+  --text-light: #ffffff;
+  --text-secondary: #b0b0b0;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(191, 62, 214, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  position: relative;
+  min-width: 320px;
+}
+
+/* WordPress Core Styles */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glow);
+  border-radius: 10px;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+  color: var(--text-secondary);
+}
+
+/* Screen Reader Text */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: var(--bg-dark);
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: var(--text-light);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Animated Background */
+.bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--bg-gradient);
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--neon-green);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+}
+
+.particle:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation-delay: 0s;
+  background: #fdf259;
+}
+
+.particle:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation-delay: 2s;
+  background: #bf3ed6;
+}
+
+.particle:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s;
+  background: #44c76a;
+}
+
+.particle:nth-child(4) {
+  top: 40%;
+  left: 60%;
+  animation-delay: 1s;
+  background: #fe5ab6;
+}
+
+.particle:nth-child(5) {
+  top: 10%;
+  left: 90%;
+  animation-delay: 3s;
+  background: #44c76a;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Navigation */
+.crypto-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-glow);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 10px var(--gold));
+}
+
+.logo-text {
+  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--neon-green);
+  background: var(--glass-bg);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+}
+
+.btn-connect {
+  background: linear-gradient(45deg, var(--primary-purple), var(--secondary-purple));
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+.btn-connect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.5);
+}
+
+/* Continue with the rest of the styles... */
+/* Note: Include all the remaining CSS from custom.css here */
