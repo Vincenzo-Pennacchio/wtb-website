@@ -45,7 +45,7 @@
     <nav class="crypto-nav">
       <div class="nav-container">
         <div class="logo">
-          <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag Logo" class="logo-icon">
+          <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag Logo" class="logo-icon" style="width: 5%;">
           <span class="logo-text">WealthBag</span>
         </div>
         <div class="nav-links">
