@@ -175,8 +175,7 @@
               <span class="gradient-text" itemprop="brand">WealthBag</span>
             </h1>
             <p class="hero-subtitle" itemprop="description">
-              Revolutionizing digital wealth with cutting-edge blockchain technology. 
-              Join the new era of financial freedom and prosperity with WTB token's sustainable 4.20% treasury yield.
+              Revolutionizing digital wealth with cutting-edge blockchain technology.
             </p>
           <div class="hero-actions" itemprop="potentialAction" itemscope itemtype="https://schema.org/TradeAction">
             <a href="https://pancakeswap.finance/swap?inputCurrency=BNB" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-decoration: none;" itemprop="url" aria-label="Buy WealthBag token on PancakeSwap">Buy WealthBag Token</a>
