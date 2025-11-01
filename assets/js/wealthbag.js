@@ -140,13 +140,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create particles periodically
     setInterval(createParticle, 800);
 
-    // Banner parallax effect
+    // Full screen banner parallax effect
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
+        const firstBannerImage = document.querySelector('.first-banner-image');
         const bannerImage = document.querySelector('.banner-image');
+        
+        if (firstBannerImage) {
+            const speed = 0.2;
+            firstBannerImage.style.transform = `translateY(${scrolled * speed}px) scale(1.05)`;
+        }
+        
         if (bannerImage) {
             const speed = 0.3;
-            bannerImage.style.transform = `translateY(${scrolled * speed}px) scale(1.1)`;
+            bannerImage.style.transform = `translateY(${(scrolled - window.innerHeight) * speed}px) scale(1.05)`;
         }
     });
 

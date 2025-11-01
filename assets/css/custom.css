@@ -223,28 +223,26 @@ html {
   backface-visibility: hidden;
 }
 
-/* First Banner Section */
+/* First Full Screen Banner */
 .first-banner-section {
   position: relative;
-  height: 100vh; /* Full viewport height */
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  margin-top: 6rem; /* Fixed space above first banner */
-  margin-bottom: -2px; /* Negative margin to prevent scroll gaps */
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  justify-content: center;
 }
 
 .first-banner-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1400px; /* Maximum width container */
-  height: 90vh; /* Slightly smaller than full viewport */
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 .first-banner-background {
@@ -261,32 +259,34 @@ html {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  filter: brightness(0.8) contrast(1.1);
+  filter: brightness(0.6) contrast(1.2);
 }
 
 .first-banner-content {
   position: relative;
   z-index: 3;
+  width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding: 0 2rem 6rem 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 .first-banner-text {
-  text-align: center;
   max-width: 1200px;
+  width: 100%;
 }
 
 .first-banner-title {
   font-family: 'Orbitron', monospace;
-  font-size: 8rem;
+  font-size: clamp(3rem, 8vw, 10rem);
   font-weight: 900;
   color: var(--text-light);
-  margin-bottom: 4rem;
-  line-height: 1.0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .first-banner-highlight {
@@ -294,41 +294,40 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: bannerGlow 2s ease-in-out infinite alternate;
+  animation: bannerGlow 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 20px rgba(253, 242, 89, 0.8));
 }
 
 .first-banner-subtitle {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
   color: var(--text-light);
-  opacity: 0.9;
+  opacity: 0.95;
   margin-bottom: 0;
   font-weight: 300;
   line-height: 1.3;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Main Banner Section */
+/* Main Full Screen Banner */
 .banner-section {
   position: relative;
-  height: 1800px; /* Fixed height of 1800px */
-  min-height: 1800px; /* Ensure minimum height is 1800px */
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-  margin-bottom: 6rem; /* Fixed space below second banner */
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  justify-content: center;
 }
 
 .banner-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1400px; /* Maximum width container */
-  height: 90%; /* 90% of section height */
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 .banner-background {
@@ -345,62 +344,24 @@ html {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  filter: brightness(0.7) contrast(1.2);
+  filter: brightness(0.5) contrast(1.3);
 }
 
-.banner-content {
-  position: relative;
-  z-index: 3;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center the content */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.banner-text {
-  text-align: center; /* Center align the text */
-  max-width: 1200px; /* Increased width for maximum banner */
-}
-
-.banner-title {
-  font-family: 'Orbitron', monospace;
-  font-size: 8rem; /* Maximum font size for ultimate impact */
-  font-weight: 900;
-  color: var(--text-light);
-  margin-bottom: 4rem; /* Even more spacing for full screen */
-  line-height: 1.0;
-}
-
-.banner-highlight {
-  background: linear-gradient(45deg, #fdf259, #44c76a, #fe5ab6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: bannerGlow 2s ease-in-out infinite alternate;
-}
+/* Banner content removed - now full screen banners without text overlay */
 
 @keyframes bannerGlow {
   0% {
-    filter: drop-shadow(0 0 5px rgba(253, 242, 89, 0.7));
+    filter: drop-shadow(0 0 10px rgba(253, 242, 89, 0.8));
   }
-  50% {
-    filter: drop-shadow(0 0 15px rgba(68, 199, 106, 0.8));
+  33% {
+    filter: drop-shadow(0 0 20px rgba(68, 199, 106, 0.9));
+  }
+  66% {
+    filter: drop-shadow(0 0 25px rgba(254, 90, 182, 1));
   }
   100% {
-    filter: drop-shadow(0 0 20px rgba(254, 90, 182, 0.9));
+    filter: drop-shadow(0 0 15px rgba(253, 242, 89, 0.8));
   }
-}
-
-.banner-subtitle {
-  font-size: 3rem; /* Maximum subtitle size for full screen banner */
-  color: var(--text-light);
-  opacity: 0.9;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 1.3;
 }
 
 
@@ -421,68 +382,34 @@ html {
   }
 }
 
-/* Banner responsive design */
+/* Full Screen Banner Responsive Design */
 @media (max-width: 768px) {
-  .first-banner-section {
-    height: 80vh; /* Reduced height on tablet */
-    min-height: 80vh;
-    margin-top: 5rem; /* Reduced fixed space above on tablet */
-    margin-bottom: -2px; /* Prevent scroll gaps on tablet */
-  }
-  
-  .first-banner-content {
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem 6rem 1rem;
-  }
-  
   .first-banner-title {
-    font-size: 4rem; /* Large mobile title for full screen */
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 1.5rem;
   }
   
   .first-banner-subtitle {
-    font-size: 2rem; /* Large mobile subtitle */
-    margin-bottom: 0;
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
   }
   
-  .first-banner-text {
-    max-width: 95%; /* Maximum mobile width */
-  }
-  
-  .banner-section {
-    height: 1200px; /* Increased height on tablet */
-    min-height: 1200px; /* Maintain significant height */
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    margin-bottom: 5rem; /* Reduced fixed space below on tablet */
+  .first-banner-content {
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .first-banner-section {
-    height: 70vh; /* Optimized height on mobile */
-    min-height: 70vh;
-    margin-top: 4rem; /* Reduced fixed space above on mobile */
-    margin-bottom: -2px; /* Prevent scroll gaps on mobile */
-  }
-  
-  .first-banner-content {
-    padding: 0 1rem 4rem 1rem;
-  }
-  
   .first-banner-title {
-    font-size: 3rem; /* Still large on small mobile */
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
   }
   
   .first-banner-subtitle {
-    font-size: 1.6rem; /* Proportional small mobile subtitle */
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
   }
   
-  .banner-section {
-    height: 1000px; /* Increased height on mobile */
-    min-height: 1000px;
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    margin-bottom: 4rem; /* Reduced fixed space below on mobile */
+  .first-banner-content {
+    padding: 0.5rem;
   }
 }
 
@@ -491,8 +418,10 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 2rem; /* Reduced padding since banner is now full screen */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   position: relative;
+  margin-top: 0;
 }
 
 .hero-container {
@@ -1127,36 +1056,7 @@ html {
     padding: 0 1.5rem;
   }
   
-  .first-banner-section {
-    padding: 0 1.5rem;
-  }
-  
-  .first-banner-container {
-    max-width: 1200px;
-  }
-  
-  .first-banner-title {
-    font-size: 6rem;
-  }
-  
-  .first-banner-subtitle {
-    font-size: 2.5rem;
-  }
-  
-  .first-banner-content {
-    padding: 0 1.5rem 5rem 1.5rem;
-  }
-  
-  .banner-section {
-    height: 1600px;
-    min-height: 1600px;
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    padding: 0 1.5rem;
-  }
-  
-  .banner-container {
-    max-width: 1200px;
-  }
+  /* Banner sections now use full screen - no specific medium-large rules needed */
   
   .hero-container {
     gap: 3rem;
@@ -1218,43 +1118,7 @@ html {
     font-size: 0.9rem;
   }
   
-  .first-banner-section {
-    height: 80vh;
-    min-height: 80vh;
-    padding: 0 1rem;
-    margin-top: 5rem;
-  }
-  
-  .first-banner-container {
-    max-width: 100%;
-    height: 85vh;
-    border-radius: 15px;
-  }
-  
-  .first-banner-title {
-    font-size: 5rem;
-  }
-  
-  .first-banner-subtitle {
-    font-size: 2.2rem;
-  }
-  
-  .first-banner-content {
-    padding: 0 1rem 4rem 1rem;
-  }
-  
-  .banner-section {
-    height: 1400px;
-    min-height: 1400px;
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    padding: 0 1rem;
-    margin-bottom: 5rem;
-  }
-  
-  .banner-container {
-    max-width: 100%;
-    border-radius: 15px;
-  }
+  /* Banner sections now use full screen - no specific tablet rules needed */
   
   .hero-container {
     grid-template-columns: 1fr;
@@ -1352,43 +1216,7 @@ html {
     font-size: 0.9rem;
   }
   
-  .first-banner-section {
-    height: 70vh;
-    min-height: 70vh;
-    padding: 0 1rem;
-    margin-top: 4rem;
-  }
-  
-  .first-banner-container {
-    max-width: 100%;
-    height: 80vh;
-    border-radius: 12px;
-  }
-  
-  .first-banner-title {
-    font-size: 4rem;
-  }
-  
-  .first-banner-subtitle {
-    font-size: 1.8rem;
-  }
-  
-  .first-banner-content {
-    padding: 0 1rem 3rem 1rem;
-  }
-  
-  .banner-section {
-    height: 1200px;
-    min-height: 1200px;
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    padding: 0 1rem;
-    margin-bottom: 4rem;
-  }
-  
-  .banner-container {
-    max-width: 100%;
-    border-radius: 12px;
-  }
+  /* Banner sections now use full screen - responsive text handled in main responsive section */
   
   .hero-container {
     grid-template-columns: 1fr;
@@ -1555,44 +1383,7 @@ html {
     font-size: 0.85rem;
   }
   
-  .first-banner-section {
-    height: 60vh;
-    min-height: 60vh;
-    padding: 0 0.8rem;
-    margin-top: 3rem;
-  }
-  
-  .first-banner-container {
-    max-width: 100%;
-    height: 75vh;
-    border-radius: 10px;
-  }
-  
-  .first-banner-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .first-banner-subtitle {
-    font-size: 1.5rem;
-  }
-  
-  .first-banner-content {
-    padding: 0 0.8rem 3rem 0.8rem;
-  }
-  
-  .banner-section {
-    height: 1000px;
-    min-height: 1000px;
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    padding: 0 0.8rem;
-    margin-bottom: 3rem;
-  }
-  
-  .banner-container {
-    max-width: 100%;
-    border-radius: 10px;
-  }
+  /* Banner sections now use full screen - responsive text handled in main responsive section */
   
   .hero-section {
     padding-top: 1rem;
@@ -1802,37 +1593,7 @@ html {
     padding: 0 0.5rem;
   }
   
-  .first-banner-section {
-    padding: 0 0.5rem;
-    margin-top: 3rem;
-  }
-  
-  .first-banner-container {
-    border-radius: 8px;
-  }
-  
-  .first-banner-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .first-banner-subtitle {
-    font-size: 1.3rem;
-  }
-  
-  .first-banner-content {
-    padding: 0 0.5rem 2rem 0.5rem;
-  }
-  
-  .banner-section {
-    margin-top: -3px; /* Increased negative margin to prevent scroll gaps */
-    padding: 0 0.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .banner-container {
-    border-radius: 8px;
-  }
+  /* Banner sections now use full screen - responsive text handled in main responsive section */
   
   .hero-title {
     font-size: 1.8rem;
