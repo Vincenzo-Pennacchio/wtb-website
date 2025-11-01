@@ -293,7 +293,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <span class="logo-icon">💰</span>
+            <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag Logo" class="logo-icon" style="width: 8%;">
             <span class="logo-text">WealthBag</span>
           </div>
           <div class="footer-text">
