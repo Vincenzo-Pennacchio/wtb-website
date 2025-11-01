@@ -1556,10 +1556,21 @@ html {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  max-width: 600px;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  max-width: 100%;
   margin: 0 auto;
+  overflow-x: auto;
+  padding: 1rem 0;
+  /* Smooth scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.social-links::-webkit-scrollbar {
+  display: none;
 }
 
 .social-link {
@@ -1567,19 +1578,22 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   backdrop-filter: blur(15px);
-  padding: 1.2rem 2rem;
-  border-radius: 25px;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
   text-decoration: none;
   color: var(--text-light);
   border: 2px solid transparent;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  min-width: 120px;
+  white-space: nowrap;
 }
 
 .social-link::before {
@@ -1920,8 +1934,12 @@ html {
   }
   
   .social-links {
-    gap: 1.2rem;
-    max-width: 500px;
+    gap: 0.8rem;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem;
   }
   
   .social-link {
@@ -2086,18 +2104,24 @@ html {
   }
   
   .social-links {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    max-width: 320px;
+    gap: 0.5rem;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem;
   }
   
   .social-link {
-    width: 100%;
-    max-width: 300px;
+    flex-shrink: 0;
+    min-width: 100px;
+    max-width: 140px;
     justify-content: center;
-    padding: 1rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    gap: 0.4rem;
   }
   
   .social-icon {
@@ -2339,19 +2363,25 @@ html {
   }
   
   .social-links {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.8rem;
-    max-width: 280px;
+    gap: 0.4rem;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem;
   }
   
   .social-link {
-    width: 100%;
-    max-width: 260px;
+    flex-shrink: 0;
+    min-width: 90px;
+    max-width: 120px;
     justify-content: center;
-    padding: 0.9rem 1.2rem;
-    font-size: 0.9rem;
-    border-radius: 20px;
+    padding: 0.7rem 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 15px;
+    gap: 0.3rem;
   }
   
   .social-link:hover {
@@ -2452,14 +2482,22 @@ html {
   }
   
   .social-links {
-    max-width: 240px;
-    gap: 0.6rem;
+    max-width: 100%;
+    gap: 0.3rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.3rem;
   }
   
   .social-link {
-    padding: 0.8rem 1rem;
-    font-size: 0.85rem;
-    border-radius: 18px;
+    flex-shrink: 0;
+    min-width: 70px;
+    max-width: 95px;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 12px;
+    gap: 0.2rem;
   }
   
   .social-icon {
