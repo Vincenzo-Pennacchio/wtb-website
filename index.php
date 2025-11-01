@@ -52,7 +52,7 @@
           <a href="#home" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#tokenomics" class="nav-link">Tokenomics</a>
-          <a href="#roadmap" class="nav-link">Roadmap</a>
+          <a href="#roadmap" class="nav-link">WTB Creation</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
         <div class="nav-actions">
@@ -190,7 +190,7 @@
     <!-- Roadmap Section -->
     <section id="roadmap" class="roadmap-section">
       <div class="container">
-        <h2 class="section-title">WTB News</h2>
+        <h2 class="section-title">WTB Creation</h2>
         <div class="roadmap-timeline">
           <div class="timeline-item completed">
             <div class="timeline-marker"></div>
