@@ -118,7 +118,7 @@
     <section class="image-section">
       <div class="container">
         <div class="image-container">
-          <img src="assets/img/backgrounds/wtb-logo-new.jpeg" alt="WealthBag Feature Image" class="feature-image">
+          <img src="assets/img/backgrounds/wtb-lambo-img.jpeg" alt="WealthBag Feature Image" class="feature-image">
         </div>
       </div>
     </section>
