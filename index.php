@@ -139,11 +139,6 @@
             <p>Advanced cryptographic security ensures your assets are always protected</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Fast</h3>
-            <p>Lightning-fast transactions with minimal fees on our optimized blockchain</p>
-          </div>
-          <div class="feature-card">
             <div class="feature-icon">🌍</div>
             <h3>Global</h3>
             <p>Accessible worldwide with decentralized infrastructure</p>
@@ -209,20 +204,6 @@
             <div class="timeline-content">
               <h3>Q2 2024</h3>
               <p>Exchange Listings & Community Building</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Q3 2024</h3>
-              <p>DeFi Integration & Staking Platform</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Q4 2024</h3>
-              <p>Mobile App & Advanced Features</p>
             </div>
           </div>
         </div>
