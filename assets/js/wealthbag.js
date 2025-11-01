@@ -197,6 +197,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update price every 3 seconds
     setInterval(updatePriceTicker, 3000);
 
+    // Treasury Card Accordion Function
+    window.toggleTreasuryDetails = function() {
+        const details = document.getElementById('treasury-details');
+        const card = document.querySelector('.treasury-card');
+        
+        if (details.classList.contains('active')) {
+            // Close accordion
+            details.classList.remove('active');
+            card.classList.remove('expanded');
+            
+            // Smooth scroll back to card
+            setTimeout(() => {
+                card.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 100);
+        } else {
+            // Open accordion
+            details.classList.add('active');
+            card.classList.add('expanded');
+            
+            // Smooth scroll to show expanded content
+            setTimeout(() => {
+                card.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 300);
+            
+            // Add staggered animation to content elements
+            const contentElements = details.querySelectorAll('h4, h5, p, ul');
+            contentElements.forEach((element, index) => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 200 + (index * 100));
+            });
+        }
+    };
+
     // Glowing border effect on cards
     const cards = document.querySelectorAll('.feature-card, .token-detail');
     cards.forEach(card => {

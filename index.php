@@ -142,6 +142,53 @@
             <h3>Profitable</h3>
             <p>Innovative tokenomics designed for sustainable growth and rewards</p>
           </div>
+          <div class="feature-card treasury-card" onclick="toggleTreasuryDetails()">
+            <div class="feature-icon">💰</div>
+            <h3>Treasury</h3>
+            <p>Every WTB investment generates real value:<br>
+            💰 Treasury with 4.20% yield<br>
+            ♻️ Reinvested to grow the project<br>
+            WTB – Growing together, always.</p>
+            <div class="treasury-details" id="treasury-details">
+              <div class="treasury-content">
+                <h4>💠 WTB – We Trust in Blockchain</h4>
+                <h5>🚀 Our Mission</h5>
+                <p>WTB was born to revolutionize decentralized finance. Our goal is to create a crypto that grows consistently, sustainably and real, building an ecosystem where every investment generates concrete value for the project and the community.</p>
+                
+                <h5>💎 The WTB Model</h5>
+                <p>Unlike many cryptocurrencies that simply burn tokens to artificially increase token value, WTB adopts a transparent and sustainable approach based on real value.</p>
+                
+                <h5>📈 Real Value Treasury:</h5>
+                <p>Every investment is allocated to a treasury that generates a 4.20% yield.</p>
+                
+                <h5>🔁 Reinvested Returns:</h5>
+                <p>All profits are reinvested into the project, fueling development, liquidity and innovation.</p>
+                
+                <p>This model creates a virtuous cycle of growth, where capital is not destroyed but works actively to strengthen WTB.</p>
+                
+                <h5>🌐 An Ecosystem That Invests in Itself</h5>
+                <p>In WTB, every investor becomes part of a self-sustaining system. The generated and reinvested returns support the entire ecosystem, ensuring stability, transparency and continuous growth.</p>
+                
+                <p><strong>Value is not burned, it multiplies.</strong></p>
+                
+                <h5>🤝 The Power of Community</h5>
+                <p>WTB puts the community at the center of the project. Every development and decision is designed to create mutual advantage and build together a solid and decentralized future.</p>
+                
+                <h5>🔒 Our Values</h5>
+                <ul>
+                  <li><strong>Transparency:</strong> every treasury movement is traceable and verifiable.</li>
+                  <li><strong>Sustainability:</strong> real growth, not artificial.</li>
+                  <li><strong>Trust:</strong> an ecosystem that works for those who support it.</li>
+                  <li><strong>Innovation:</strong> reinvesting to evolve continuously.</li>
+                </ul>
+                
+                <h5>💬 In Summary</h5>
+                <p>WTB is not just a cryptocurrency. It's a self-sustaining ecosystem, founded on real value and constant 4.20% returns, that reinvests to build the future of blockchain.</p>
+                
+                <p><strong>WTB – The project that invests in itself, to grow together with its community.</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
