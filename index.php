@@ -61,18 +61,6 @@
       </div>
     </nav>
 
-    <!-- Revolution Section -->
-    <section class="revolution-section">
-      <div class="container">
-      <div class="revolution-content">
-        <h2 class="revolution-title">
-        <span class="revolution-highlight">WealthBag</span> Revolution
-        </h2>
-        <p class="revolution-subtitle">The next generation of cryptocurrency is here</p>
-      </div>
-      </div>
-    </section>
-
     <!-- Hero Section -->
     <section id="home" class="hero-section">
       <div class="hero-container">
