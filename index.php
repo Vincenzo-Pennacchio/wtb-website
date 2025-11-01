@@ -67,13 +67,17 @@
         <div class="first-banner-background">
           <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag First Banner" class="first-banner-image">
         </div>
-        <div class="first-banner-content">
-          <div class="first-banner-text">
-            <h2 class="first-banner-title">
-              <span class="first-banner-highlight">WealthBag</span> Revolution
-            </h2>
-            <p class="first-banner-subtitle">The next generation of cryptocurrency is here</p>
-          </div>
+      </div>
+    </section>
+
+    <!-- Revolution Section -->
+    <section class="revolution-section">
+      <div class="container">
+        <div class="revolution-content">
+          <h2 class="revolution-title">
+            <span class="revolution-highlight">WealthBag</span> Revolution
+          </h2>
+          <p class="revolution-subtitle">The next generation of cryptocurrency is here</p>
         </div>
       </div>
     </section>
