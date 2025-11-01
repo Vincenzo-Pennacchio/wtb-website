@@ -13,8 +13,8 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     
     <!-- SEO Meta Tags -->
-    <title>WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield | Buy WTB Token</title>
-    <meta name="description" content="WealthBag (WTB) is a revolutionary cryptocurrency with sustainable 4.20% treasury yield. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!" />
+    <title>WealthBag (WTB) - Revolutionary Cryptocurrency | Buy WTB Token</title>
+    <meta name="description" content="WealthBag (WTB) is a revolutionary cryptocurrency with sustainable and transparent tokenomics. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!" />
     <meta name="keywords" content="WealthBag, WTB token, cryptocurrency, blockchain, DeFi, treasury yield, sustainable crypto, buy WTB, pancakeswap, tokenomics, crypto investment, digital currency, BSC token, real yield, crypto treasury" />
     <meta name="author" content="WealthBag Team" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -22,8 +22,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wealthbag.it/" />
-    <meta property="og:title" content="WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield" />
-    <meta property="og:description" content="Join WealthBag's sustainable crypto ecosystem with 4.20% treasury yield. Real value creation through transparent tokenomics and community-driven DeFi innovation." />
+    <meta property="og:title" content="WealthBag (WTB) - Revolutionary Cryptocurrency" />
+    <meta property="og:description" content="Join WealthBag's sustainable crypto ecosystem. Real value creation through transparent tokenomics and community-driven DeFi innovation." />
     <meta property="og:image" content="https://wealthbag.it/assets/img/backgrounds/wtb-logo-new-removebg-preview.png" />
     <meta property="og:site_name" content="WealthBag" />
     <meta property="og:locale" content="en_US" />
@@ -31,8 +31,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://wealthbag.it/" />
-    <meta property="twitter:title" content="WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield" />
-    <meta property="twitter:description" content="Join WealthBag's sustainable crypto ecosystem with 4.20% treasury yield. Real value creation through transparent tokenomics and community-driven DeFi innovation." />
+    <meta property="twitter:title" content="WealthBag (WTB) - Revolutionary Cryptocurrency" />
+    <meta property="twitter:description" content="Join WealthBag's sustainable crypto ecosystem. Real value creation through transparent tokenomics and community-driven DeFi innovation." />
     <meta property="twitter:image" content="https://wealthbag.it/assets/img/backgrounds/wtb-logo-new-removebg-preview.png" />
     <meta property="twitter:site" content="@RealWealthBag" />
     <meta property="twitter:creator" content="@RealWealthBag" />
@@ -75,7 +75,7 @@
       "alternateName": "WTB",
       "url": "https://wealthbag.it",
       "logo": "https://wealthbag.it/assets/img/backgrounds/wtb-logo-new-removebg-preview.png",
-      "description": "WealthBag (WTB) is a revolutionary cryptocurrency with sustainable 4.20% treasury yield and transparent tokenomics.",
+      "description": "WealthBag (WTB) is a revolutionary cryptocurrency with sustainable and transparent tokenomics.",
       "foundingDate": "2024",
       "sameAs": [
         "https://t.me/RealWealthBagWTB",
@@ -96,7 +96,7 @@
       "@context": "https://schema.org",
       "@type": "FinancialProduct",
       "name": "WealthBag Token (WTB)",
-      "description": "Revolutionary cryptocurrency token with 4.20% treasury yield, sustainable tokenomics, and community-driven DeFi ecosystem.",
+      "description": "Revolutionary cryptocurrency token with sustainable tokenomics and community-driven DeFi ecosystem.",
       "category": "Cryptocurrency",
       "provider": {
         "@type": "Organization",
@@ -104,7 +104,7 @@
       },
       "feesAndCommissionsSpecification": {
         "@type": "Text",
-        "text": "4.20% treasury yield with transparent fee structure"
+        "text": "transparent fee structure"
       }
     }
     </script>
@@ -141,7 +141,7 @@
     <nav class="crypto-nav" role="navigation" aria-label="Main navigation">
       <div class="nav-container">
         <div class="logo" itemscope itemtype="https://schema.org/Organization">
-          <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag cryptocurrency logo - Revolutionary DeFi token with 4.20% treasury yield" class="logo-icon" style="width: 8%;" itemprop="logo">
+          <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag cryptocurrency logo - Revolutionary DeFi token" class="logo-icon" style="width: 8%;" itemprop="logo">
           <span class="logo-text" itemprop="name">WealthBag</span>
         </div>
         
@@ -221,7 +221,7 @@
             <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag DeFi ecosystem visualization - Blockchain technology and cryptocurrency innovation" class="feature-image" loading="lazy">
           </div>
           <div class="image-container">
-            <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag treasury yield system - Sustainable cryptocurrency growth and 4.20% returns" class="feature-image" loading="lazy">
+            <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag treasury yield system - Sustainable cryptocurrency growth" class="feature-image" loading="lazy">
           </div>
         </div>
       </div>
@@ -245,13 +245,13 @@
           <article class="feature-card" itemscope itemtype="https://schema.org/Service">
             <div class="feature-icon" aria-hidden="true">📈</div>
             <h3 itemprop="name">Profitable Tokenomics</h3>
-            <p itemprop="description">Innovative WTB tokenomics designed for sustainable growth with 4.20% treasury yield and deflationary mechanisms for long-term rewards</p>
+            <p itemprop="description">Innovative WTB tokenomics designed for sustainable growth and deflationary mechanisms for long-term rewards</p>
           </article>
           <article class="feature-card treasury-card" onclick="toggleTreasuryDetails()" itemscope itemtype="https://schema.org/FinancialProduct" role="button" tabindex="0" aria-expanded="false" aria-controls="treasury-details">
             <div class="feature-icon" aria-hidden="true">💰</div>
             <h3 itemprop="name">WTB Treasury System</h3>
             <p itemprop="description">Every WTB investment generates real value through our sustainable treasury model:<br>
-            💰 Treasury with 4.20% annual yield<br>
+            <br>
             ♻️ All profits reinvested to grow the project<br>
             WTB – Growing together, building wealth always.</p>
             <button class="click-me-btn" onclick="event.stopPropagation(); toggleTreasuryDetails();" aria-label="Learn more about WTB Treasury system details">
@@ -271,7 +271,7 @@
             <p>Unlike many cryptocurrencies that simply burn tokens to artificially increase token value, WTB adopts a transparent and sustainable approach based on real value.</p>
             
             <h5>📈 Real Value Treasury:</h5>
-            <p>Every investment is allocated to a treasury that generates a 4.20% yield.</p>
+            <p>Every investment is allocated to the treasury</p>
             
             <h5>🔁 Reinvested Returns:</h5>
             <p>All profits are reinvested into the project, fueling development, liquidity and innovation.</p>
@@ -295,7 +295,7 @@
             </ul>
             
             <h5>💬 In Summary</h5>
-            <p>WTB is not just a cryptocurrency. It's a self-sustaining ecosystem, founded on real value and constant 4.20% returns, that reinvests to build the future of blockchain.</p>
+            <p>WTB is not just a cryptocurrency. It's a self-sustaining ecosystem, that reinvests to build the future of blockchain.</p>
             
             <p><strong>WTB – The project that invests in itself, to grow together with its community.</strong></p>
           </div>
@@ -347,7 +347,7 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
               <h3 itemprop="name">Q1 2024 - Genesis</h3>
-              <p itemprop="description">WTB Project Launch & Smart Contract Token Creation - Foundation establishment with 4.20% treasury yield system</p>
+              <p itemprop="description">WTB Project Launch & Smart Contract Token Creation</p>
               <meta itemprop="startDate" content="2024-01-01">
               <meta itemprop="endDate" content="2024-03-31">
               <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
