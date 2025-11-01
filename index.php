@@ -281,7 +281,7 @@
             <h5>🌐 An Ecosystem That Invests in Itself</h5>
             <p>In WTB, every investor becomes part of a self-sustaining system. The generated and reinvested returns support the entire ecosystem, ensuring stability, transparency and continuous growth.</p>
             
-            <p><strong>Value is not burned, it multiplies.</strong></p>
+            <p><strong>Beyond burning WTB, we reinvest in it.</strong></p>
             
             <h5>🤝 The Power of Community</h5>
             <p>WTB puts the community at the center of the project. Every development and decision is designed to create mutual advantage and build together a solid and decentralized future.</p>
