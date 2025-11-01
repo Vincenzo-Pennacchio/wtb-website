@@ -735,27 +735,8 @@ html {
 /* Image Section */
 .image-section {
   padding: 6rem 0;
-  background: linear-gradient(135deg, 
-    rgba(10, 10, 10, 0.8) 0%, 
-    rgba(25, 25, 35, 0.9) 50%, 
-    rgba(10, 10, 10, 0.8) 100%
-  );
   position: relative;
   overflow: hidden;
-}
-
-.image-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 30% 30%, rgba(191, 62, 214, 0.1) 0%, transparent 60%),
-    radial-gradient(circle at 70% 70%, rgba(68, 199, 106, 0.08) 0%, transparent 60%);
-  pointer-events: none;
-  z-index: 1;
 }
 
 .images-grid {
@@ -919,7 +900,6 @@ html {
 /* About Section */
 .about-section {
   padding: 6rem 0;
-  background: rgba(16, 16, 16, 0.5);
 }
 
 .features-grid {
@@ -1343,7 +1323,6 @@ html {
 /* Roadmap Section */
 .roadmap-section {
   padding: 6rem 0;
-  background: rgba(16, 16, 16, 0.5);
 }
 
 .roadmap-timeline {
@@ -1434,7 +1413,6 @@ html {
 /* Contact Section */
 .contact-section {
   padding: 6rem 0;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(25, 25, 35, 0.95) 50%, rgba(10, 10, 10, 0.9) 100%);
 }
 
 .social-links {

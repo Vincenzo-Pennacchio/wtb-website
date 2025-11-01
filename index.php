@@ -55,9 +55,6 @@
           <a href="#roadmap" class="nav-link">WTB Creation</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
-        <div class="nav-actions">
-          <button class="btn-connect">Connect Wallet</button>
-        </div>
       </div>
     </nav>
 
@@ -74,8 +71,8 @@
             Join the new era of financial freedom and prosperity.
           </p>
           <div class="hero-actions">
-            <a href="https://pancakeswap.finance/swap?inputCurrency=BNB" target="_blank" class="btn-primary">Buy WealthBag</a>
-            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678" target="_blank" class="btn-secondary">Real-Time-Chart</a>
+            <a href="https://pancakeswap.finance/swap?inputCurrency=BNB" target="_blank" class="btn-primary" style="text-decoration: none;">Buy WealthBag</a>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678" target="_blank" class="btn-secondary" style="text-decoration: none;">Real-Time-Chart</a>
           </div>
           <div class="hero-stats">
             <div class="stat">
