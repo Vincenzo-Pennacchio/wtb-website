@@ -178,7 +178,7 @@
               Revolutionizing digital wealth with cutting-edge blockchain technology.
             </p>
           <div class="hero-actions" itemprop="potentialAction" itemscope itemtype="https://schema.org/TradeAction">
-            <a href="https://pancakeswap.finance/swap?inputCurrency=BNB" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-decoration: none;" itemprop="url" aria-label="Buy WealthBag token on PancakeSwap">Buy WealthBag Token</a>
+            <a href="https://pancakeswap.finance/swap?inputCurrency=0x02759C2A968216D35AE26972f7d1a83a753A24dF" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-decoration: none;" itemprop="url" aria-label="Buy WealthBag token on PancakeSwap">Buy WealthBag Token</a>
             <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="text-decoration: none;" aria-label="View WTB real-time price chart on DexTools">Real-Time Chart</a>
           </div>
           <div class="hero-stats" itemscope itemtype="https://schema.org/MonetaryAmount" role="region" aria-label="WTB token current statistics">
