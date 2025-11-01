@@ -115,6 +115,9 @@
           <div class="image-container">
           <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag Feature Image" class="feature-image">
           </div>
+          <div class="image-container">
+          <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag Feature Image" class="feature-image">
+          </div>
         </div>
       </div>
     </section>
@@ -242,7 +245,7 @@
             <span class="logo-text">WealthBag</span>
           </div>
           <div class="footer-text">
-            <p>&copy; 2025 WealthBag. All rights reserved. Building the future of cryptocurrency.</p>
+            <p>&copy; 2025 WealthBag. We build wealth, we protect the future of WTB.</p>
           </div>
         </div>
       </div>

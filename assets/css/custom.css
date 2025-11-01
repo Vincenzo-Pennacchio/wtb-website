@@ -762,9 +762,9 @@ html {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -807,6 +807,10 @@ html {
 
 .image-container:nth-child(3) .feature-image {
   animation-delay: 0.2s;
+}
+
+.image-container:nth-child(4) .feature-image {
+  animation-delay: 0.3s;
 }
 
 /* Grid hover effects */
@@ -1228,6 +1232,11 @@ html {
     width: 280px;
     height: 280px;
   }
+  
+  .images-grid {
+    max-width: 1500px;
+    gap: 2.5rem;
+  }
 }
 
 /* Large screens (1200px to 1439px) */
@@ -1364,8 +1373,9 @@ html {
   }
   
   .images-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    max-width: 900px;
+    max-width: 600px;
   }
   
   .feature-image {
