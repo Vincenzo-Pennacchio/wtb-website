@@ -64,26 +64,23 @@
     <!-- First Banner Section -->
     <section class="first-banner-section">
       <div class="first-banner-container">
-        <div class="first-banner-background">
-          <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag First Banner" class="first-banner-image">
-        </div>
-        <div class="first-banner-content">
-          <div class="first-banner-text">
-            <h2 class="first-banner-title">
-              <span class="first-banner-highlight">WealthBag</span> Revolution
-            </h2>
-            <p class="first-banner-subtitle">The next generation of cryptocurrency is here</p>
-          </div>
+      <div class="first-banner-background">
+        <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag First Banner" class="first-banner-image">
+      </div>
+      <div class="first-banner-content">
+        <div class="first-banner-text">
+        <h2 class="first-banner-title">
+          <span class="first-banner-highlight">WealthBag</span> Revolution
+        </h2>
+        <p class="first-banner-subtitle">The next generation of cryptocurrency is here</p>
         </div>
       </div>
-    </section>
-
-    <!-- Main Banner Section -->
-    <section class="banner-section">
+      </div>
+    </section><!-- Main Banner Section --><section class="banner-section">
       <div class="banner-container">
-        <div class="banner-background">
-          <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag Banner" class="banner-image">
-        </div>
+      <div class="banner-background">
+        <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag Banner" class="banner-image">
+      </div>
       </div>
     </section>
 
