@@ -74,8 +74,8 @@
             Join the new era of financial freedom and prosperity.
           </p>
           <div class="hero-actions">
-            <button class="btn-primary">Buy WealthBag</button>
-            <button class="btn-secondary">Learn More</button>
+            <a href="https://pancakeswap.finance/swap?inputCurrency=BNB" target="_blank" class="btn-primary">Buy WealthBag</a>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678" target="_blank" class="btn-secondary">Real-Time-Chart</a>
           </div>
           <div class="hero-stats">
             <div class="stat">
