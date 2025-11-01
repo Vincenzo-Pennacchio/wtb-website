@@ -199,46 +199,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Treasury Card Accordion Function
     window.toggleTreasuryDetails = function() {
-        const details = document.getElementById('treasury-details');
+        const detailsBox = document.getElementById('treasury-details');
         const card = document.querySelector('.treasury-card');
         
-        if (details.classList.contains('active')) {
-            // Close accordion
-            details.classList.remove('active');
+        if (detailsBox.classList.contains('active')) {
+            // Close details box
+            detailsBox.classList.remove('active');
             card.classList.remove('expanded');
             
-            // Smooth scroll back to card
+            // Smooth scroll back to features grid
             setTimeout(() => {
-                card.scrollIntoView({
+                const featuresGrid = document.querySelector('.features-grid');
+                featuresGrid.scrollIntoView({
                     behavior: 'smooth',
                     block: 'center'
                 });
             }, 100);
         } else {
-            // Open accordion
-            details.classList.add('active');
+            // Open details box
+            detailsBox.classList.add('active');
             card.classList.add('expanded');
             
             // Smooth scroll to show expanded content
             setTimeout(() => {
-                card.scrollIntoView({
+                detailsBox.scrollIntoView({
                     behavior: 'smooth',
-                    block: 'start'
+                    block: 'start',
+                    inline: 'nearest'
                 });
-            }, 300);
+            }, 400);
             
             // Add staggered animation to content elements
-            const contentElements = details.querySelectorAll('h4, h5, p, ul');
-            contentElements.forEach((element, index) => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(20px)';
-                
-                setTimeout(() => {
-                    element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }, 200 + (index * 100));
-            });
+            setTimeout(() => {
+                const contentElements = detailsBox.querySelectorAll('h4, h5, p, ul, li');
+                contentElements.forEach((element, index) => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(30px)';
+                    
+                    setTimeout(() => {
+                        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, 100 + (index * 80));
+                });
+            }, 200);
         }
     };
 
