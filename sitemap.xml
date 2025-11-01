@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://wealthbag.it/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://wealthbag.it/assets/img/backgrounds/wtb-logo-new-removebg-preview.png</image:loc>
+      <image:title>WealthBag WTB Token Logo</image:title>
+      <image:caption>WealthBag cryptocurrency token logo with revolutionary 4.20% treasury yield</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://wealthbag.it/assets/img/backgrounds/wtb-lambo-img.jpeg</image:loc>
+      <image:title>WealthBag Luxury Lifestyle</image:title>
+      <image:caption>Luxury lifestyle achievable with WealthBag cryptocurrency investment</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://wealthbag.it/assets/img/backgrounds/wtb-pow-pow.jpeg</image:loc>
+      <image:title>WealthBag Community Power</image:title>
+      <image:caption>WealthBag community power and WTB token strength visualization</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://wealthbag.it/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Tokenomics Section -->
+  <url>
+    <loc>https://wealthbag.it/#tokenomics</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Roadmap Section -->
+  <url>
+    <loc>https://wealthbag.it/#roadmap</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://wealthbag.it/#contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

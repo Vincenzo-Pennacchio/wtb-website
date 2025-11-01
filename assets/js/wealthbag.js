@@ -351,6 +351,10 @@ window.toggleMobileMenu = function() {
     navLinks.classList.toggle('active');
     mobileBtn.classList.toggle('active');
     
+    // Update ARIA attributes for accessibility and SEO
+    const isExpanded = navLinks.classList.contains('active');
+    mobileBtn.setAttribute('aria-expanded', isExpanded);
+    
     // Prevent body scroll when menu is open
     if (navLinks.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
@@ -428,3 +432,105 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(navLinksContainer, { attributes: true });
     }
 });
+
+// === SEO ENHANCEMENTS ===
+
+// Update page title based on visible section
+function updatePageTitle() {
+    const sections = document.querySelectorAll('section[id]');
+    const titles = {
+        'home': 'WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield | Buy WTB Token',
+        'about': 'About WealthBag - Revolutionary DeFi Token with Sustainable Treasury System',
+        'tokenomics': 'WTB Tokenomics - Transparent Token Distribution & Treasury Yield System',
+        'roadmap': 'WealthBag Development Roadmap - WTB Token Creation & Growth Milestones',
+        'contact': 'Join WealthBag Community - WTB Token Social Media & Support Channels'
+    };
+    
+    let currentSection = 'home';
+    const scrollPosition = window.scrollY + 200;
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSection = section.id;
+        }
+    });
+    
+    if (titles[currentSection] && document.title !== titles[currentSection]) {
+        document.title = titles[currentSection];
+        
+        // Update meta description based on section
+        const descriptions = {
+            'home': 'WealthBag (WTB) is a revolutionary cryptocurrency with sustainable 4.20% treasury yield. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!',
+            'about': 'Learn about WealthBag\'s revolutionary DeFi approach with 4.20% treasury yield, secure smart contracts, global accessibility, and sustainable tokenomics designed for long-term growth.',
+            'tokenomics': 'Discover WTB token distribution: 40% Liquidity Pool, 30% Community Rewards, 20% Development, 10% Marketing. Transparent tokenomics with 4.20% treasury yield system.',
+            'roadmap': 'WealthBag development roadmap: Q1 2024 project launch & token creation, Q2 2024 DEX listings & community building. Follow WTB token growth milestones.',
+            'contact': 'Join WealthBag community on Telegram, Twitter, Discord, and YouTube. Connect with WTB token holders, get support, and stay updated on DeFi innovations.'
+        };
+        
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && descriptions[currentSection]) {
+            metaDesc.setAttribute('content', descriptions[currentSection]);
+        }
+    }
+}
+
+// Throttled scroll listener for performance
+let scrollTimeout;
+window.addEventListener('scroll', function() {
+    if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(updatePageTitle, 100);
+});
+
+// Initial call
+updatePageTitle();
+
+// Add structured data for breadcrumbs
+function addBreadcrumbStructuredData() {
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://wealthbag.it/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About WealthBag",
+                "item": "https://wealthbag.it/#about"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "WTB Tokenomics",
+                "item": "https://wealthbag.it/#tokenomics"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Development Roadmap",
+                "item": "https://wealthbag.it/#roadmap"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Community Contact",
+                "item": "https://wealthbag.it/#contact"
+            }
+        ]
+    });
+    document.head.appendChild(breadcrumbScript);
+}
+
+// Add breadcrumb structured data
+addBreadcrumbStructuredData();
