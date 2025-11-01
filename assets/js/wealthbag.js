@@ -340,3 +340,91 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// === MOBILE MENU FUNCTIONS ===
+
+// Toggle Mobile Menu
+window.toggleMobileMenu = function() {
+    const navLinks = document.getElementById('nav-links');
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    
+    navLinks.classList.toggle('active');
+    mobileBtn.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+};
+
+// Close Mobile Menu
+window.closeMobileMenu = function() {
+    const navLinks = document.getElementById('nav-links');
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    
+    navLinks.classList.remove('active');
+    mobileBtn.classList.remove('active');
+    document.body.style.overflow = 'auto';
+};
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const navLinks = document.getElementById('nav-links');
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(event.target) && 
+        !mobileBtn.contains(event.target)) {
+        closeMobileMenu();
+    }
+});
+
+// Close mobile menu on window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 991) {
+        closeMobileMenu();
+    }
+});
+
+// Handle mobile menu animations with stagger effect
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links .nav-link');
+    
+    // Add staggered animation when menu opens
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && 
+                mutation.attributeName === 'class' && 
+                mutation.target.classList.contains('nav-links')) {
+                
+                if (mutation.target.classList.contains('active')) {
+                    // Menu is opening - add staggered animation
+                    navLinks.forEach((link, index) => {
+                        link.style.opacity = '0';
+                        link.style.transform = 'translateX(50px)';
+                        
+                        setTimeout(() => {
+                            link.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            link.style.opacity = '1';
+                            link.style.transform = 'translateX(0)';
+                        }, 100 + (index * 100));
+                    });
+                } else {
+                    // Menu is closing - reset styles
+                    navLinks.forEach(link => {
+                        link.style.opacity = '';
+                        link.style.transform = '';
+                        link.style.transition = '';
+                    });
+                }
+            }
+        });
+    });
+    
+    const navLinksContainer = document.getElementById('nav-links');
+    if (navLinksContainer) {
+        observer.observe(navLinksContainer, { attributes: true });
+    }
+});

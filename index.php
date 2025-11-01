@@ -48,12 +48,21 @@
           <img src="assets/img/backgrounds/wtb-logo-new-removebg-preview.png" alt="WealthBag Logo" class="logo-icon" style="width: 8%;">
           <span class="logo-text">WealthBag</span>
         </div>
-        <div class="nav-links">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#tokenomics" class="nav-link">Tokenomics</a>
-          <a href="#roadmap" class="nav-link">WTB Creation</a>
-          <a href="#contact" class="nav-link">Contact</a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link" onclick="closeMobileMenu()">Home</a>
+          <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+          <a href="#tokenomics" class="nav-link" onclick="closeMobileMenu()">Tokenomics</a>
+          <a href="#roadmap" class="nav-link" onclick="closeMobileMenu()">WTB Creation</a>
+          <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
         </div>
       </div>
     </nav>
