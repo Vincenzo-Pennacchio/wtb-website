@@ -190,7 +190,7 @@
     <!-- Roadmap Section -->
     <section id="roadmap" class="roadmap-section">
       <div class="container">
-        <h2 class="section-title">Roadmap</h2>
+        <h2 class="section-title">WTB News</h2>
         <div class="roadmap-timeline">
           <div class="timeline-item completed">
             <div class="timeline-marker"></div>
