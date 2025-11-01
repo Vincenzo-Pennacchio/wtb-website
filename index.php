@@ -108,6 +108,12 @@
         <div class="image-container">
           <img src="assets/img/backgrounds/wtb-lambo-img.jpeg" alt="WealthBag Feature Image" class="feature-image">
         </div>
+        <div class="image-container">
+          <img src="assets/img/backgrounds/wtb-pow-pow.jpeg" alt="WealthBag Feature Image" class="feature-image">
+        </div>
+        <div class="image-container">
+          <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag Feature Image" class="feature-image">
+        </div>
       </div>
     </section>
 
