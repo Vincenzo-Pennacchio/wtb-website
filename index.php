@@ -149,6 +149,9 @@
             💰 Treasury with 4.20% yield<br>
             ♻️ Reinvested to grow the project<br>
             WTB – Growing together, always.</p>
+            <button class="click-me-btn" onclick="event.stopPropagation(); toggleTreasuryDetails();">
+              🔥 CLICK ME 🔥
+            </button>
           </div>
         </div>
         
