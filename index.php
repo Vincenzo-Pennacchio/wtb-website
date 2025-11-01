@@ -61,33 +61,15 @@
       </div>
     </nav>
 
-    <!-- First Full Screen Banner -->
-    <section class="first-banner-section">
-      <div class="first-banner-container">
-        <div class="first-banner-background">
-          <img src="assets/img/backgrounds/WTB-background-img.jpeg" alt="WealthBag First Banner" class="first-banner-image">
-        </div>
-      </div>
-    </section>
-
     <!-- Revolution Section -->
     <section class="revolution-section">
       <div class="container">
-        <div class="revolution-content">
-          <h2 class="revolution-title">
-            <span class="revolution-highlight">WealthBag</span> Revolution
-          </h2>
-          <p class="revolution-subtitle">The next generation of cryptocurrency is here</p>
-        </div>
+      <div class="revolution-content">
+        <h2 class="revolution-title">
+        <span class="revolution-highlight">WealthBag</span> Revolution
+        </h2>
+        <p class="revolution-subtitle">The next generation of cryptocurrency is here</p>
       </div>
-    </section>
-
-    <!-- Main Full Screen Banner -->
-    <section class="banner-section">
-      <div class="banner-container">
-        <div class="banner-background">
-          <img src="assets/img/backgrounds/wtb-lambo-img.jpeg" alt="WealthBag Main Banner" class="banner-image">
-        </div>
       </div>
     </section>
 
