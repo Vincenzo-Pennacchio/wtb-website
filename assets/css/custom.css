@@ -295,7 +295,7 @@ html, body {
   height: 1800px; /* Fixed height of 1800px */
   min-height: 1800px; /* Ensure minimum height is 1800px */
   overflow: hidden;
-  margin-top: 0; /* No space between banners */
+  margin-top: -1px; /* Negative margin to ensure no gap */
   margin-bottom: 6rem; /* Fixed space below second banner */
   display: flex;
   justify-content: center;
@@ -434,7 +434,7 @@ html, body {
   .banner-section {
     height: 1200px; /* Increased height on tablet */
     min-height: 1200px; /* Maintain significant height */
-    margin-top: 0;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     margin-bottom: 5rem; /* Reduced fixed space below on tablet */
   }
 }
@@ -461,6 +461,7 @@ html, body {
   .banner-section {
     height: 1000px; /* Increased height on mobile */
     min-height: 1000px;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     margin-bottom: 4rem; /* Reduced fixed space below on mobile */
   }
 }
@@ -1029,6 +1030,7 @@ html, body {
   .banner-section {
     height: 1600px;
     min-height: 1600px;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     padding: 0 1.5rem;
   }
   
@@ -1124,6 +1126,7 @@ html, body {
   .banner-section {
     height: 1400px;
     min-height: 1400px;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     padding: 0 1rem;
     margin-bottom: 5rem;
   }
@@ -1250,6 +1253,7 @@ html, body {
   .banner-section {
     height: 1200px;
     min-height: 1200px;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     padding: 0 1rem;
     margin-bottom: 4rem;
   }
@@ -1445,6 +1449,7 @@ html, body {
   .banner-section {
     height: 1000px;
     min-height: 1000px;
+    margin-top: -1px; /* Negative margin to ensure no gap */
     padding: 0 0.8rem;
     margin-bottom: 3rem;
   }
@@ -1674,6 +1679,7 @@ html, body {
   }
   
   .banner-section {
+    margin-top: -1px; /* Negative margin to ensure no gap */
     padding: 0 0.5rem;
     margin-bottom: 3rem;
   }
