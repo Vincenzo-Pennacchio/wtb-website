@@ -76,11 +76,12 @@
         </div>
       </div>
       </div>
-    </section><!-- Main Banner Section --><section class="banner-section">
+    </section><!-- Main Banner Section -->
+    <section class="banner-section">
       <div class="banner-container">
-      <div class="banner-background">
-        <img src="assets/img/backgrounds/WTB-background-img-2.jpeg" alt="WealthBag Banner" class="banner-image">
-      </div>
+        <div class="banner-background">
+          <img src="assets/img/backgrounds/wtb-lambo-img.jpeg" alt="WealthBag Banner" class="banner-image">
+        </div>
       </div>
     </section>
 
