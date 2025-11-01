@@ -732,6 +732,63 @@ html {
   background-clip: text;
 }
 
+/* Image Section */
+.image-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, 
+    rgba(10, 10, 10, 0.8) 0%, 
+    rgba(25, 25, 35, 0.9) 50%, 
+    rgba(10, 10, 10, 0.8) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(191, 62, 214, 0.1) 0%, transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(68, 199, 106, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(191, 62, 214, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: brightness(1.1) contrast(1.2);
+  border: 2px solid rgba(191, 62, 214, 0.3);
+}
+
+.feature-image:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(191, 62, 214, 0.4);
+  border-color: rgba(191, 62, 214, 0.6);
+  filter: brightness(1.2) contrast(1.3);
+}
+
 /* About Section */
 .about-section {
   padding: 6rem 0;
@@ -1272,6 +1329,18 @@ html {
     height: 200px;
   }
   
+  .image-section {
+    padding: 4rem 0;
+  }
+  
+  .image-container {
+    max-width: 600px;
+  }
+  
+  .feature-image {
+    border-radius: 15px;
+  }
+  
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -1389,6 +1458,18 @@ html {
   .section-title {
     font-size: 2.2rem;
     margin-bottom: 2rem;
+  }
+  
+  .image-section {
+    padding: 3rem 0;
+  }
+  
+  .image-container {
+    max-width: 90%;
+  }
+  
+  .feature-image {
+    border-radius: 12px;
   }
   
   .features-grid {
@@ -1571,6 +1652,28 @@ html {
   
   .about-section, .tokenomics-section, .roadmap-section, .contact-section {
     padding: 4rem 0;
+  }
+  
+  .image-section {
+    padding: 2.5rem 0;
+  }
+  
+  .image-container {
+    max-width: 95%;
+  }
+  
+  .feature-image {
+    border-radius: 10px;
+    box-shadow: 
+      0 15px 40px rgba(0, 0, 0, 0.3),
+      0 0 30px rgba(191, 62, 214, 0.15);
+  }
+  
+  .feature-image:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 
+      0 20px 50px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(191, 62, 214, 0.3);
   }
   
   .section-title {

@@ -114,6 +114,15 @@
       </div>
     </section>
 
+    <!-- Image Section -->
+    <section class="image-section">
+      <div class="container">
+        <div class="image-container">
+          <img src="assets/img/backgrounds/wtb-logo-new.jpeg" alt="WealthBag Feature Image" class="feature-image">
+        </div>
+      </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about-section">
       <div class="container">
