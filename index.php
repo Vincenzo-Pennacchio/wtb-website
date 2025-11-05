@@ -157,6 +157,7 @@
           <a href="#home" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to Home section">Home</a>
           <a href="#about" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to About WealthBag section">About</a>
           <a href="#tokenomics" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Tokenomics section">Tokenomics</a>
+          <a href="#chart" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Price Chart section">Chart</a>
           <a href="#roadmap" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Creation roadmap section">WTB Creation</a>
           <a href="#contact" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to Contact and community section">Contact</a>
         </div>
@@ -179,7 +180,7 @@
             </p>
           <div class="hero-actions" itemprop="potentialAction" itemscope itemtype="https://schema.org/TradeAction">
             <a href="https://pancakeswap.finance/swap?inputCurrency=0x02759C2A968216D35AE26972f7d1a83a753A24dF" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-decoration: none;" itemprop="url" aria-label="Buy WealthBag token on PancakeSwap">Buy WealthBag Token</a>
-            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="text-decoration: none;" aria-label="View WTB real-time price chart on DexTools">Real-Time Chart</a>
+            <a href="https://www.dextools.io/widget-chart/en/bnb/pe-light/0xd818e883071e29a9c8ef45b98519eeb813b5423f?theme=light&chartType=2&chartResolution=30&drawingToolbars=false" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="text-decoration: none;" aria-label="View WTB real-time price chart on DexTools">Real-Time Chart</a>
           </div>
           <div class="hero-stats" itemscope itemtype="https://schema.org/MonetaryAmount" role="region" aria-label="WTB token current statistics">
             <div class="stat">
@@ -332,6 +333,43 @@
             <div class="token-detail" role="listitem">
               <div class="token-color color-4" aria-hidden="true"></div>
               <span>Marketing (10%) - Growing WTB community and awareness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section id="chart" class="chart-section" itemscope itemtype="https://schema.org/Chart" aria-labelledby="chart-heading">
+      <div class="container">
+        <h2 id="chart-heading" class="section-title" itemprop="name">WTB Token Real-Time Price Chart</h2>
+        <div class="chart-container" role="region" aria-label="WealthBag WTB token live price chart and trading data">
+          <div class="chart-wrapper">
+            <iframe id="dextools-widget"
+                title="DEXTools Trading Chart - WealthBag (WTB) Real-Time Price and Trading Data"
+                width="500" height="400"
+                src="https://www.dextools.io/widget-chart/en/bnb/pe-light/0xd818e883071e29a9c8ef45b98519eeb813b5423f?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
+                frameborder="0"
+                allowfullscreen
+                loading="lazy"
+                itemprop="chart"
+                aria-label="Interactive WTB token price chart with real-time trading data"></iframe>
+          </div>
+          <div class="chart-info">
+            <div class="chart-feature" itemscope itemtype="https://schema.org/Service">
+              <div class="chart-feature-icon" aria-hidden="true">📈</div>
+              <h3 itemprop="name">Real-Time Trading</h3>
+              <p itemprop="description">Live WTB token price updates with advanced charting tools and technical indicators for informed trading decisions.</p>
+            </div>
+            <div class="chart-feature" itemscope itemtype="https://schema.org/Service">
+              <div class="chart-feature-icon" aria-hidden="true">📊</div>
+              <h3 itemprop="name">Market Analytics</h3>
+              <p itemprop="description">Comprehensive market data including volume, liquidity, and trading patterns for WealthBag cryptocurrency analysis.</p>
+            </div>
+            <div class="chart-feature" itemscope itemtype="https://schema.org/Service">
+              <div class="chart-feature-icon" aria-hidden="true">🎯</div>
+              <h3 itemprop="name">DeFi Insights</h3>
+              <p itemprop="description">Advanced DeFi metrics and treasury yield tracking to monitor WTB token performance and growth trends.</p>
             </div>
           </div>
         </div>

@@ -442,6 +442,7 @@ function updatePageTitle() {
         'home': 'WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield | Buy WTB Token',
         'about': 'About WealthBag - Revolutionary DeFi Token with Sustainable Treasury System',
         'tokenomics': 'WTB Tokenomics - Transparent Token Distribution & Treasury Yield System',
+        'chart': 'WTB Token Live Chart - Real-Time Price & Trading Data on DexTools',
         'roadmap': 'WealthBag Development Roadmap - WTB Token Creation & Growth Milestones',
         'contact': 'Join WealthBag Community - WTB Token Social Media & Support Channels'
     };
@@ -466,6 +467,7 @@ function updatePageTitle() {
             'home': 'WealthBag (WTB) is a revolutionary cryptocurrency with sustainable 4.20% treasury yield. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!',
             'about': 'Learn about WealthBag\'s revolutionary DeFi approach with 4.20% treasury yield, secure smart contracts, global accessibility, and sustainable tokenomics designed for long-term growth.',
             'tokenomics': 'Discover WTB token distribution: 40% Liquidity Pool, 30% Community Rewards, 20% Development, 10% Marketing. Transparent tokenomics with 4.20% treasury yield system.',
+            'chart': 'View WTB token real-time price chart and trading data on DexTools. Live cryptocurrency analysis with advanced technical indicators and market insights for informed trading decisions.',
             'roadmap': 'WealthBag development roadmap: Q1 2024 project launch & token creation, Q2 2024 DEX listings & community building. Follow WTB token growth milestones.',
             'contact': 'Join WealthBag community on Telegram, Twitter, Discord, and YouTube. Connect with WTB token holders, get support, and stay updated on DeFi innovations.'
         };
@@ -518,12 +520,18 @@ function addBreadcrumbStructuredData() {
             {
                 "@type": "ListItem",
                 "position": 4,
+                "name": "WTB Price Chart",
+                "item": "https://wealthbag.it/#chart"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
                 "name": "Development Roadmap",
                 "item": "https://wealthbag.it/#roadmap"
             },
             {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 6,
                 "name": "Community Contact",
                 "item": "https://wealthbag.it/#contact"
             }
