@@ -347,7 +347,7 @@
           <div class="chart-wrapper">
             <iframe id="dextools-widget"
                 title="DEXTools Trading Chart - WealthBag (WTB) Real-Time Price and Trading Data"
-                width="500" height="400"
+                width="700" height="500"
                 src="https://www.dextools.io/widget-chart/en/bnb/pe-light/0xd818e883071e29a9c8ef45b98519eeb813b5423f?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
                 frameborder="0"
                 allowfullscreen

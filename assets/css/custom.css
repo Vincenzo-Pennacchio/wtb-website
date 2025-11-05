@@ -1549,6 +1549,8 @@ html {
   background: #ffffff;
   max-width: 100%;
   height: auto;
+  min-width: 300px;
+  min-height: 250px;
 }
 
 #dextools-widget:hover {
@@ -2083,8 +2085,8 @@ html {
   
   #dextools-widget {
     width: 100%;
-    max-width: 500px;
-    height: 400px;
+    max-width: 650px;
+    height: 450px;
   }
   
   .social-links {
@@ -2248,8 +2250,8 @@ html {
   
   #dextools-widget {
     width: 100%;
-    max-width: 450px;
-    height: 350px;
+    max-width: 550px;
+    height: 400px;
   }
   
   .chart-feature {
@@ -2516,8 +2518,8 @@ html {
   
   #dextools-widget {
     width: 100%;
-    max-width: 350px;
-    height: 300px;
+    max-width: 420px;
+    height: 350px;
   }
   
   .chart-feature {
@@ -2699,8 +2701,8 @@ html {
   
   #dextools-widget {
     width: 100%;
-    max-width: 280px;
-    height: 250px;
+    max-width: 310px;
+    height: 280px;
   }
   
   .chart-feature {
