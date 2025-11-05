@@ -158,6 +158,7 @@
           <a href="#about" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to About WealthBag section">About</a>
           <a href="#tokenomics" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Tokenomics section">Tokenomics</a>
           <a href="#chart" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Price Chart section">Chart</a>
+          <a href="#collaborations" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Collaborations section">Collaborations</a>
           <a href="#roadmap" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to WTB Creation roadmap section">WTB Creation</a>
           <a href="#contact" class="nav-link" onclick="closeMobileMenu()" role="menuitem" aria-label="Go to Contact and community section">Contact</a>
         </div>
@@ -389,6 +390,55 @@
                   loading="lazy"
                   itemprop="potentialAction"
                   aria-label="Interactive WTB token swap widget with best price aggregation"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section id="collaborations" class="collaborations-section" itemscope itemtype="https://schema.org/Partnership" aria-labelledby="collaborations-heading">
+      <div class="container">
+        <h2 id="collaborations-heading" class="section-title" itemprop="name">WealthBag Strategic Collaborations</h2>
+        <div class="collaborations-content">
+          <div class="collaboration-intro">
+            <p>WealthBag is proud to collaborate with leading DeFi platforms and tools to provide our community with the best trading experience and analytics for WTB token.</p>
+          </div>
+          
+          <div class="collaboration-partners" role="region" aria-label="WealthBag strategic partners and collaborations">
+            <div class="partner-card" itemscope itemtype="https://schema.org/Organization">
+              <div class="partner-logo">
+                <img src="assets/img/collab-img/Brand_DEXTools_Dark.png" alt="DEXTools - Advanced DeFi analytics and trading platform partner of WealthBag" itemprop="logo" loading="lazy">
+              </div>
+              <div class="partner-info">
+                <h3 itemprop="name">DEXTools Partnership</h3>
+                <p itemprop="description">
+                  Through our collaboration with DEXTools, WTB token holders have access to advanced trading analytics, 
+                  real-time charts, and comprehensive market data. This partnership enhances transparency and provides 
+                  professional-grade tools for informed trading decisions in the WealthBag ecosystem.
+                </p>
+                <div class="partner-features">
+                  <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <span>Advanced Analytics</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <span>Real-Time Data</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">🔍</span>
+                    <span>Market Insights</span>
+                  </div>
+                </div>
+                <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xd818e883071e29a9c8ef45b98519eeb813b5423f" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="partner-link" 
+                   aria-label="View WTB token on DEXTools platform">
+                  View WTB on DEXTools
+                </a>
+              </div>
             </div>
           </div>
         </div>
