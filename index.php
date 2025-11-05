@@ -355,6 +355,7 @@
                 itemprop="chart"
                 aria-label="Interactive WTB token price chart with real-time trading data"></iframe>
           </div>
+          
           <div class="chart-info">
             <div class="chart-feature" itemscope itemtype="https://schema.org/Service">
               <div class="chart-feature-icon" aria-hidden="true">📈</div>
@@ -370,6 +371,24 @@
               <div class="chart-feature-icon" aria-hidden="true">🎯</div>
               <h3 itemprop="name">DeFi Insights</h3>
               <p itemprop="description">Advanced DeFi metrics and treasury yield tracking to monitor WTB token performance and growth trends.</p>
+            </div>
+          </div>
+          
+          <!-- Swap Widget Section -->
+          <div class="swap-section" role="region" aria-label="WealthBag WTB token swap and trading interface">
+            <h3 class="swap-title" itemscope itemtype="https://schema.org/TradeAction">
+              <span itemprop="name">Swap WTB Token Instantly</span>
+            </h3>
+            <div class="swap-wrapper">
+              <iframe id="dextswap-aggregator-widget"
+                  title="DEXTswap Aggregator - WealthBag (WTB) Token Swap Interface"
+                  width="400" height="420"
+                  src="https://www.dextools.io/widget-aggregator/en/swap/bnb/0x02759c2a968216d35ae26972f7d1a83a753a24df"
+                  frameborder="0"
+                  allowfullscreen
+                  loading="lazy"
+                  itemprop="potentialAction"
+                  aria-label="Interactive WTB token swap widget with best price aggregation"></iframe>
             </div>
           </div>
         </div>

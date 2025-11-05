@@ -1603,6 +1603,90 @@ html {
   font-size: 0.95rem;
 }
 
+/* Swap Section */
+.swap-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.swap-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-light);
+  margin: 0;
+  background: linear-gradient(45deg, #fdf259, #44c76a, #bf3ed6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(68, 199, 106, 0.3));
+}
+
+.swap-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(191, 62, 214, 0.3);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 60px rgba(191, 62, 214, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+}
+
+.swap-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(191, 62, 214, 0.1), 
+    transparent);
+  transition: left 0.6s ease;
+}
+
+.swap-wrapper:hover::before {
+  left: 100%;
+}
+
+.swap-wrapper:hover {
+  transform: translateY(-5px);
+  border-color: rgba(191, 62, 214, 0.5);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(191, 62, 214, 0.3);
+}
+
+#dextswap-aggregator-widget {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background: #ffffff;
+  max-width: 100%;
+  width: 100%;
+  height: 420px;
+  min-width: 280px;
+}
+
+#dextswap-aggregator-widget:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
 /* Roadmap Section */
 .roadmap-section {
   padding: 6rem 0;
@@ -2098,6 +2182,21 @@ html {
     gap: 1.5rem;
   }
   
+  .swap-title {
+    font-size: 1.6rem;
+  }
+  
+  .swap-wrapper {
+    padding: 1.5rem;
+    max-width: 450px;
+  }
+  
+  #dextswap-aggregator-widget {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+  
   .social-links {
     gap: 0.8rem;
     max-width: 100%;
@@ -2278,6 +2377,21 @@ html {
   
   .chart-feature h3 {
     font-size: 1.2rem;
+  }
+  
+  .swap-title {
+    font-size: 1.5rem;
+  }
+  
+  .swap-wrapper {
+    padding: 1.2rem;
+    max-width: 400px;
+  }
+  
+  #dextswap-aggregator-widget {
+    width: 100%;
+    max-width: 350px;
+    height: 380px;
   }
   
   .timeline-item,
@@ -2557,6 +2671,27 @@ html {
     font-size: 0.9rem;
   }
   
+  .swap-section {
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .swap-title {
+    font-size: 1.3rem;
+  }
+  
+  .swap-wrapper {
+    padding: 1rem;
+    max-width: 350px;
+  }
+  
+  #dextswap-aggregator-widget {
+    width: 100%;
+    max-width: 320px;
+    height: 350px;
+    min-width: 280px;
+  }
+  
   .timeline-item {
     margin-bottom: 2rem;
   }
@@ -2744,6 +2879,27 @@ html {
   
   .chart-feature p {
     font-size: 0.85rem;
+  }
+  
+  .swap-section {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .swap-title {
+    font-size: 1.1rem;
+  }
+  
+  .swap-wrapper {
+    padding: 0.8rem;
+    max-width: 310px;
+  }
+  
+  #dextswap-aggregator-widget {
+    width: 100%;
+    max-width: 280px;
+    height: 320px;
+    min-width: 260px;
   }
   
   .social-links {
