@@ -453,20 +453,20 @@
           <div class="timeline-item completed" itemscope itemtype="https://schema.org/Event" role="listitem">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <h3 itemprop="name">Q1 2024 - Genesis</h3>
+              <h3 itemprop="name">Q1 2025 - Genesis</h3>
               <p itemprop="description">WTB Project Launch & Smart Contract Token Creation</p>
-              <meta itemprop="startDate" content="2024-01-01">
-              <meta itemprop="endDate" content="2024-03-31">
+              <meta itemprop="startDate" content="2025-11-01">
+              <meta itemprop="endDate" content="2025-11-30">
               <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
             </div>
           </div>
           <div class="timeline-item active" itemscope itemtype="https://schema.org/Event" role="listitem">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <h3 itemprop="name">Q2 2024 - Expansion</h3>
+              <h3 itemprop="name">Q2 2025 - Expansion</h3>
               <p itemprop="description">Major DEX Listings, PancakeSwap Integration & Massive Community Building - WTB token accessibility and adoption</p>
-              <meta itemprop="startDate" content="2024-04-01">
-              <meta itemprop="endDate" content="2024-06-30">
+              <meta itemprop="startDate" content="2025-04-01">
+              <meta itemprop="endDate" content="2025-11-30">
               <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
             </div>
           </div>
