@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function updatePageTitle() {
     const sections = document.querySelectorAll('section[id]');
     const titles = {
-        'home': 'WealthBag (WTB) - Revolutionary Cryptocurrency with 4.20% Treasury Yield | Buy WTB Token',
+        'home': 'WealthBag (WTB) - Revolutionary Cryptocurrency | Buy WTB Token',
         'about': 'About WealthBag - Revolutionary DeFi Token with Sustainable Treasury System',
         'tokenomics': 'WTB Tokenomics - Transparent Token Distribution & Treasury Yield System',
         'chart': 'WTB Token Live Chart - Real-Time Price & Trading Data on DexTools',
@@ -464,9 +464,9 @@ function updatePageTitle() {
         
         // Update meta description based on section
         const descriptions = {
-            'home': 'WealthBag (WTB) is a revolutionary cryptocurrency with sustainable 4.20% treasury yield. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!',
-            'about': 'Learn about WealthBag\'s revolutionary DeFi approach with 4.20% treasury yield, secure smart contracts, global accessibility, and sustainable tokenomics designed for long-term growth.',
-            'tokenomics': 'Discover WTB token distribution: 40% Liquidity Pool, 30% Community Rewards, 20% Development, 10% Marketing. Transparent tokenomics with 4.20% treasury yield system.',
+            'home': 'WealthBag (WTB) is a revolutionary cryptocurrency. Join the future of DeFi with real value creation, transparent tokenomics, and community-driven growth. Buy WTB token now!',
+            'about': 'Learn about WealthBag\'s revolutionary DeFi approach, secure smart contracts, global accessibility, and sustainable tokenomics designed for long-term growth.',
+            'tokenomics': 'Discover WTB token distribution: 40% Liquidity Pool, 30% Community Rewards, 20% Development, 10% Marketing. Transparent tokenomics with sustainable growth strategies.',
             'chart': 'View WTB token real-time price chart and trading data on DexTools. Live cryptocurrency analysis with advanced technical indicators and market insights for informed trading decisions.',
             'roadmap': 'WealthBag development roadmap: Q1 2024 project launch & token creation, Q2 2024 DEX listings & community building. Follow WTB token growth milestones.',
             'contact': 'Join WealthBag community on Telegram, Twitter, Discord, and YouTube. Connect with WTB token holders, get support, and stay updated on DeFi innovations.'
