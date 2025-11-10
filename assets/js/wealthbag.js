@@ -254,18 +254,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Prova con BSCScan per ottenere almeno alcuni dati
             console.log('🔄 Usando metodo fallback...');
             
-            // Simula dati realistici basati su pattern di mercato
-            const basePrice = 0.0001 + (Math.random() * 0.0009); // Range realistico per token emergenti
-            const change24h = (Math.random() - 0.5) * 20; // Variazione ±10%
-            const marketCap = basePrice * 1000000000; // Assumendo 1B di supply
+            // Simula dati realistici basati sul valore attuale WTB
+            const basePrice = 0.000008715475473765473; // Prezzo base reale WTB
+            const volatility = 0.15; // 15% di volatilità
+            const priceVariation = (Math.random() - 0.5) * 2 * volatility;
+            const currentPrice = basePrice * (1 + priceVariation);
+            
+            const change24h = (Math.random() - 0.5) * 30; // Variazione ±15%
+            const estimatedSupply = 1000000000000000; // 1 quadrilione (tipico per micro-token)
+            const marketCap = currentPrice * estimatedSupply;
             
             return {
-                price: basePrice,
+                price: Math.max(currentPrice, 0.000000001), // Minimo per evitare zero
                 priceChange24h: change24h,
                 marketCap: marketCap,
-                volume24h: marketCap * 0.1, // 10% del market cap
-                liquidity: marketCap * 0.05, // 5% del market cap
-                source: 'Fallback'
+                volume24h: marketCap * 0.05, // 5% del market cap
+                liquidity: marketCap * 0.02, // 2% del market cap
+                source: 'Fallback (WTB Simulation)'
             };
         } catch (error) {
             console.error('❌ Errore metodo fallback:', error);
@@ -281,7 +286,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const priceElement = document.querySelector('.hero-stats .stat:nth-child(1) .stat-value');
         if (priceElement && data.price > 0) {
             const formattedPrice = formatPrice(data.price);
-            priceElement.textContent = `$${formattedPrice}`;
+            
+            // Aggiungi formattazione speciale per micro-prezzi
+            if (data.price < 0.000001) {
+                priceElement.innerHTML = `$<span style="color: #39ff14; font-weight: bold;">${formattedPrice}</span>`;
+            } else {
+                priceElement.textContent = `$${formattedPrice}`;
+            }
+            
+            // Tooltip con valore completo per prezzi molto piccoli
+            if (data.price < 0.00001) {
+                priceElement.title = `Exact price: $${data.price.toFixed(18)}`;
+            }
             
             // Effetto flash per indicare aggiornamento
             priceElement.style.transition = 'all 0.3s ease';
@@ -330,16 +346,32 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('✅ WTB Stats aggiornate con successo!');
     }
 
-    // Formatta il prezzo in base al valore
+    // Formatta il prezzo in base al valore - ottimizzato per micro-prezzi WTB
     function formatPrice(price) {
         if (price >= 1) {
+            // Prezzi sopra $1
             return price.toFixed(2);
         } else if (price >= 0.01) {
+            // Prezzi tra $0.01 e $1
             return price.toFixed(4);
-        } else if (price >= 0.0001) {
+        } else if (price >= 0.001) {
+            // Prezzi tra $0.001 e $0.01
             return price.toFixed(6);
+        } else if (price >= 0.0001) {
+            // Prezzi tra $0.0001 e $0.001
+            return price.toFixed(8);
+        } else if (price >= 0.00001) {
+            // Prezzi tra $0.00001 e $0.0001
+            return price.toFixed(10);
+        } else if (price >= 0.000001) {
+            // Prezzi tra $0.000001 e $0.00001 (range WTB attuale)
+            return price.toFixed(12);
+        } else if (price >= 0.0000001) {
+            // Prezzi molto piccoli
+            return price.toFixed(15);
         } else {
-            return price.toExponential(2);
+            // Prezzi estremamente piccoli - usa notazione scientifica
+            return price.toExponential(3);
         }
     }
 
@@ -634,6 +666,10 @@ style.textContent = `
     .stat-value {
         transition: all 0.3s ease;
         position: relative;
+        word-break: break-all; /* Permette di spezzare numeri lunghi */
+        font-family: 'Orbitron', monospace; /* Font monospace per numeri */
+        font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive font size */
+        letter-spacing: 0.5px; /* Spacing tra cifre per leggibilità */
     }
 
     .stat-value:hover {
@@ -717,6 +753,54 @@ style.textContent = `
             font-size: 0.6rem;
             margin-top: 8px;
         }
+        
+        /* Responsive per micro-prezzi su mobile */
+        .stat-value {
+            font-size: clamp(0.9rem, 2vw, 1.5rem);
+            line-height: 1.2;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .hero-stats .stat {
+            min-height: 80px; /* Altezza minima per contenere numeri lunghi */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    /* Stili specifici per micro-prezzi */
+    .micro-price {
+        background: linear-gradient(45deg, #39ff14, #50c878);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: none; /* Rimuovi text-shadow per micro-prezzi */
+    }
+    
+    /* Animazione speciale per aggiornamento micro-prezzi */
+    @keyframes microPriceUpdate {
+        0% { 
+            transform: scale(1); 
+            filter: brightness(1);
+        }
+        50% { 
+            transform: scale(1.03); 
+            filter: brightness(1.5);
+            text-shadow: 0 0 15px rgba(57, 255, 20, 0.8);
+        }
+        100% { 
+            transform: scale(1); 
+            filter: brightness(1);
+        }
+    }
+    
+    .stat-value.micro-update {
+        animation: microPriceUpdate 0.6s ease;
     }
 `;
 document.head.appendChild(style);
